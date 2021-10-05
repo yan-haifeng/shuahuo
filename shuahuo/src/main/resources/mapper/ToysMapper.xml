@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.ToysMapper">
+
+    <!-- 得到所有的玩具信息 -->
+    <select id="findAllToys" resultType="Toys">
+        select
+        *
+        from toys
+    </select>
+
+    <!-- 根据id查找某个玩具信息 -->
+    <select id="selectToysById" resultType="Toys" parameterType="java.lang.Integer" >
+        select
+        *
+        from toys where toys_id = #{toys_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据id删除某个玩具信息 -->
+    <delete id="deleteToysByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from toys where toys_id = #{toys_id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条玩具信息 -->
+    <insert id="insertToysSelective" parameterType="com.shuahuo.bean.Toys" >
+        insert into toys
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="toys_id != null" >
+                toys_id,
+            </if>
+            <if test="toys_name != null" >
+                toys_name,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="toys_id != null" >
+                #{toys_id,jdbcType=INTEGER},
+            </if>
+            <if test="toys_name != null" >
+                #{toys_name,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条玩具信息 -->
+    <update id="updateToysByPrimaryKeySelective" parameterType="com.shuahuo.bean.Toys" >
+        update toys
+        <set >
+            <if test="toys_name != null" >
+               toys_name = #{toys_name,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where toys_id = #{toys_id,jdbcType=INTEGER}
+    </update>
+</mapper>

@@ -1,0 +1,109 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+
+#p-e{
+    color: rgba(250, 2, 1, 0.6);
+}
+
+#i-e{
+    background-color:rgba(250, 2, 1, 0.6);
+    visibility: visible;
+}
+
+.main-content{
+    height: 1400px;
+}
+
+.main-content-title{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main-content-title .title{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 28px;
+    color: #000000;
+}
+
+.details_wapper{
+    position: relative;
+    width: 865px;
+    height: 72px;
+    margin: auto;
+    margin-top: 86px;
+}
+
+.details_wapper .hr-b{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 0;
+}
+
+.details_wapper .statu_wapper{
+    position: absolute;
+    width: 54px;
+    height: 71px;
+    transform: translateX(-50%);
+}
+
+.details_wapper .not_accepted{
+    left: 0%;
+}
+
+.details_wapper .accepted{
+    left: 25%;
+}
+
+.details_wapper .making{
+    left: 50%;
+}
+
+.details_wapper .delivery{
+    left: 75%;
+}
+
+.details_wapper .finish{
+    left: 100%;
+}
+
+.details_wapper .statu_wapper .statu_icon{
+    width: 23px;
+    height: 23px;
+    background-color: #999999;
+    border: 9px solid #cccccc;
+    border-radius: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+
+.details_wapper .statu_wapper .statu_icon_ing{
+    background-color: rgba(250, 2, 1, 0.6) !important;
+    border: 9px solid #ffffff !important;
+}
+
+.details_wapper .statu_wapper p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #999999;
+}
+
+.backgroud-black-r{
+    position: absolute;
+    width: 100%;
+    height: 970px;
+    background-color:rgba(250, 2, 1, 0.6);
+    top:505px;
+    z-index:-1;
+}

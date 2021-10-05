@@ -1,0 +1,97 @@
+@font-face{
+    font-family: 'PingFangSC-Regular'; 
+    src: url('../resources/font/苹方黑体-准-简.ttf');
+}
+
+@font-face{
+    font-family: 'PingFangSC-Light'; 
+    src: url('../resources/font/苹方黑体-细-简.ttf');
+}
+
+@font-face{
+    font-family: 'PingFangSC-Medium'; 
+    src: url('../resources/font/苹方黑体-中黑-简.ttf');
+}
+
+@font-face{
+    font-family: 'PingFangSC-bold'; 
+    src: url('../resources/font/苹方黑体-中粗-简.ttf');
+}
+
+.enrol-form-wapper{
+    width: 300px;
+    height: 300px;
+}
+
+.input-wapper{
+    width: 298px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: #e6e6e6 0.75px solid;
+    border-radius: 2px;
+}
+
+.border-a{
+    width: 39px;
+    height: 21px;
+    border-right: #e6e6e6 0.75px solid;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: left;
+}
+
+.phone-number,.password,.verification-code{
+    display: inline-block;
+    height: 21px;
+    width: 245px;
+    margin-left: 10px;
+    border: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    color: #b3b3b3;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.verificat-btn{
+    font-family: PingFangSC-Regular;
+    width: 90px;
+    height: 40px;
+    float: right;
+    background-color: #e6e6e6;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+
+.verification-code{
+    width: 190px !important;
+}
+
+.btn-wapper-a{
+    width: 300px !important;
+    height: 50px !important;
+    border: none;
+}
+
+.btn-1{
+    font-family: PingFangSC-Regular;
+    width: 298px;
+    height: 48px;
+    background-color: rgba(250, 2, 1, 0.6);
+    text-align: center;
+    line-height: 48px;
+    font-size: 21px;
+    border: none;
+    color: #ffffff;
+    border-radius: 2px;
+    outline: none;
+    padding: 0px;
+    cursor: pointer;
+}
+

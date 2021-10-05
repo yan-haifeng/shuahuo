@@ -1,0 +1,40 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+body{
+    min-width: 0px;
+}
+
+.main-content{
+    margin-top: 0px !important;
+    padding: 0px !important;
+}
+
+.main-content-title li{
+    margin-left: 55px;
+}
+
+.main-content-title .click-li{
+    font-family: PingFangSC-Regular !important;
+    color: #998675 !important;
+}
+
+.main-content iframe{
+    width: 1080px;
+    height: 1330px;
+    margin-top:20px;
+}
+
+.backgroud-black-g{
+    position: absolute;
+    width: 100%;
+    height: 970px;
+    background-color:rgba(104, 155, 51, 0.36);
+    top:505px;
+    z-index:-1;
+}
+

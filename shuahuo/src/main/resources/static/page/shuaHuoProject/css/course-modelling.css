@@ -1,0 +1,132 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+
+#p-c{
+    color: #9ebb77;
+}
+
+#i-c{
+    background-color: #9ebb77;
+    visibility: visible;
+}
+
+.modeling-nav{
+    margin-top: 43px;
+}
+
+.modeling-nav li{
+    width: 200px;
+    height: 60px;
+    background-color: #e6e6e6;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.modeling-nav-imgwapper {
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modeling-nav li span{
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.modeling-nav li span img{
+    width: 40px;
+    height: 40px;
+}
+.modeling-nav li span .material-imgwidth{
+    width: 37.836px;
+    height: 39.313px;
+}
+.modeling-nav li span .process-imgwidth{
+    width: 37.836px;
+    height: 39.313px;
+}
+.modeling-nav li span .function-imgwidth{
+    width: 41.767px;
+    height: 39.313px;
+}
+
+.modeling-nav li span .other-imgwidth{
+    width: 30px;
+    height: 40px;
+}
+
+.modeling-nav li p{
+    height: 40px;
+    display: inline-block;
+    font-family: PingFangSC-Medium;
+    font-size: 28px;
+    color: black;
+    line-height: 40px;
+}
+
+.modeling-nav .click-li{
+    background-color: #ffffff;
+    border-top-right-radius: 16px;
+}
+
+.main-content{
+    margin-top: 0px !important;
+}
+
+.main-content-title li{
+    margin-left: 25px;
+}
+
+.main-content-title .click-li{
+    font-family: PingFangSC-Regular !important;
+    color: #998675 !important;
+}
+
+.main-content iframe{
+    width: 100%;
+    height: 1400px;
+    padding-bottom: 0px;
+}
+
+.show_box {
+    position: fixed;
+    width: 600px;
+    height: 560px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    background-size: 100% 100%;
+}
+
+.exit_btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-image: url(../resources/icon/exit.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.backgroud-black-g{
+    position: absolute;
+    width: 100%;
+    height: 970px;
+    background-color:rgba(104, 155, 51, 0.36);
+    top:505px;
+    z-index:-1;
+}
+

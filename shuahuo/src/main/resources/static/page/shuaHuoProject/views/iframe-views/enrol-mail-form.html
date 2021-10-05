@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../../css/solid.css">
+    <link rel="stylesheet" href="../../css/phone-form.css">
+    <link rel="stylesheet" type="text/css" href="../../css/dialog.css">
+
+    <title>enrol-phone-form</title>
+</head>
+
+<body>
+    <div class="enrol-form-wapper">
+        <form action="" id="enrol_form">
+            <div class="input-wapper">
+                <div class="border-a"></div>
+                <input type="text" id="mailuser" class="phone-number" placeholder="请输入邮箱号" name="mailuser">
+            </div>
+            <div class="input-wapper">
+                <div id="slider" class="slide"></div>
+            </div>
+            <div class="input-wapper">
+                <input type="text" id="verification-code" class="verification-code" placeholder="请输入验证码"
+                    name="verificatcode">
+                <div class="verificat-btn" id="verificat-btn">获取验证码</div>
+            </div>
+            <div class="input-wapper">
+                <div class="border-a"></div>
+                <input type="password" id="password" class="password" placeholder="请输入密码" name="password">
+            </div>
+            <div class="input-wapper btn-wapper-a">
+                <div class="btn-1" id="enrol-btn">注 册</div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/slide.js"></script>
+<script src="../../js/zepto.min.js"></script>
+<script type="text/javascript" src="../../js/dialog.min.js"></script>
+
+
+<script type="text/javascript">
+</script>
+
+<script>
+    var vercode = 0;
+    var time = 60;
+    var flag = true;   //设置点击标记，防止60内再次点击生效
+    //发送验证码
+    $('#verificat-btn').click(function () {
+        $(this).attr("disabled", true);
+        var mailuser = $('#mailuser').val();
+        if (flag) {
+            var timer = setInterval(function () {
+                if (time == 60 && flag) {
+                    flag = false;
+                    $.ajax({
+                        type: 'get',
+                        url: '../../getMailCode',
+                        data: {
+                            "mailuser": mailuser
+                        },
+                        xhrFields: {
+                            withCredentials: true//允许带上凭据
+                        },
+                        crossDomain: true,
+                        dataType: "json"
+                    });
+                } else if (time == 0) {
+                    $("#verificat-btn").removeAttr("disabled");
+                    $("#verificat-btn").text("获取验证码");
+                    clearInterval(timer);
+                    time = 60;
+                    flag = true;
+                } else {
+                    $("#verificat-btn").text(time + " s 重新发送");
+                    time--;
+                }
+            }, 1000);
+        }
+
+    });
+</script>
+
+<script>
+    $(function () {
+        $("#enrol-btn").click(
+            function () {
+                var mailuser = $('#mailuser').val();
+                var verificatcode = $('#verification-code').val();
+                var password = $('#password').val();
+                $.ajax({
+                    type: 'get',
+                    dataType: 'json',
+                    url: '../../MailAddUser',
+                    data: {
+                        "mailname": mailuser,
+                        "verificatcode": verificatcode,
+                        "password": password,
+                    },
+                    xhrFields: {
+                        withCredentials: true//允许带上凭据
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                        console.log(data);
+                        if (data.code == 0) {
+                            //注册成功
+                            popup({
+                                type: 'success', msg: "注册成功", delay: 1000, bg:false, callBack: function () {
+                                    $(".mask",top.document).css("display", "none");
+                                }
+                            });
+                        } else {
+                            //注册失败 显示msg信息
+                            popup({type:'error',msg:"操作失败",delay:2000,bg:false,clickDomCancel:true,callBack:function(){
+                                }
+                            }); 
+                        }
+                    }
+                });
+            }
+        );
+    });
+</script>
+
+</html>

@@ -1,0 +1,156 @@
+#zhushuiqiang_box{
+    position: absolute;
+    top: 1405px;
+    left: 40px;
+    width: 490px;
+    height: 234px;
+}
+
+#zhushuiqiang_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jinzitasuoqiu_box{
+    position: absolute;
+    top: 1660px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#jinzitasuoqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tanmmianhua_box{
+    position: absolute;
+    top: 635px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#tanmmianhua_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#xiaomaodiaoyu_box{
+    position: absolute;
+    top: 635px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#xiaomaodiaoyu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#ganyureng_box{
+    position: absolute;
+    top: 635px;
+    left: 549px;
+    width:  235px;
+    height: 234px;
+}
+
+#ganyureng_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tuimoren_box{
+    position: absolute;
+    top: 635px;
+    left: 804px;
+    width:  235px;
+    height: 234px;
+}
+
+#tuimoren_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#zhujielong_box{
+    position: absolute;
+    top: 893px;
+    left: 549px;
+    width:  235px;
+    height: 234px;
+}
+
+#zhujielong_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pijingqiang_box{
+    position: absolute;
+    top: 893px;
+    left: 806px;
+    width:  235px;
+    height: 234px;
+}
+
+#pijingqiang_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#yannche_box{
+    position: absolute;
+    top: 893px;
+    left: 40px;
+    width:  490px;
+    height: 490px;
+}
+
+#yannche_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#kongzhu_box{
+    position: absolute;
+    top: 1149px;
+    left: 549px;
+    width:  235px;
+    height: 234px;
+}
+
+#kongzhu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#shuchapi_box{
+    position: absolute;
+    top: 1149px;
+    left: 806px;
+    width:  235px;
+    height: 234px;
+}
+
+#shuchapi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#damo_box{
+    position: absolute;
+    top: 1660px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#damo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#zhugongjian_box{
+    position: absolute;
+    top: 1405px;
+    left: 549px;
+    width:  492px;
+    height: 492px;
+}
+
+#zhugongjian_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+

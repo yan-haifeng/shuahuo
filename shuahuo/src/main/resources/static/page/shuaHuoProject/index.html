@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/structure.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesCode.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <title>耍货</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="top-nav">
+                <div class="top-nav-center">
+                    <div class="top-nav-center-city">
+                        <ul>
+                            <li><span><img src="resources/icon/position_1.png"></span></li>
+                            <!-- 后期后台 修改 -->
+                            <li>杭州</li>
+                            <li>
+                                <p>[切换城市]</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav-center-sign">
+                        <ul>
+                            <li><a href="views/login.html" class="login-btn">登录</a></li>
+                            <li><a class="enrol-btn">注册</a></li>
+                            <li class="r-margin-none"><a href="views/uilt-views/toOrder_details.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-nav">
+                <div class="middle-nav-logo"><img src="resources/icon/logo.gif"></div>
+                <div class="middle-nav-search">
+                    <div class="middle-nav-search-boder">
+                        <div class="middle-nav-search-input">
+                            <span><img src="resources/icon/search_1.png"></span>
+                            <form action="#">
+                                <input type="text" placeholder="浙江最热门的手工艺品">
+                            </form>
+                        </div>
+                        <div class="middle-nav-search-btn">搜索</div>
+                    </div>
+                    <div class="middle-nav-search-recent">
+                        <ul>
+                            <li><a href="https://www.baidu.com/s?wd=最热手工品在线订购" target="_blank">最热手工品在线订购</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=浙江传统文献" target="_blank">浙江传统文献</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=扇子的制作流程" target="_blank">扇子的制作流程</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li id="h-page"><a href="index.html" id="p-a">首页<i id="i-a"></i></a></li>
+                    <li id="museum"><a href="views/museum.html" id="p-b">展览博物馆<i id="i-b"></i></a></li>
+                    <li id="course"><a href="views/course-process.html" id="p-c">乡土课程<i id="i-c"></i></a>
+                        <ul class="course-drop-nav">
+                            <li><a href="views/course-process.html">制作流程</a></li>
+                            <li><a href="views/course-modelling.html">工艺造型</a></li>
+                            <li><a href="views/course-structure.html">结构原理</a></li>
+                        </ul>
+                    </li>
+                    <li id="community"><a href="views/community-forum.html" id="p-d">传承社区<i id="i-d"></i></a>
+                    </li>
+                    <li id="custom" class="r-margin-none"><a href="views/uilt-views/toOrder_details.html"
+                            id="p-e">我的定制<i id="i-e"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- 此处书写主体内容 -->
+        <div class="carousel">
+            <div class="ft-carousel" id="carousel">
+                <div class="layui-carousel" id="test1" lay-filter="test1">
+                    <div carousel-item="">
+                        <div><a href="javascript: void(0)"><img src="resources/img/index_banner/banner1.jpg"></a></div>
+                        <div><a href="views/museum.html"><img src="resources/img/index_banner/banner2.png"></a></div>
+                        <div><a href="views/course-structure.html"><img
+                                    src="resources/img/index_banner/banner3.png"></a></div>
+                        <div><a href="views/game.html"><img src="resources/img/index_banner/banner4.png"></a></div>
+                        <div><a href="views/uilt-views/toBecome_craftsman.html"><img
+                                    src="resources/img/index_banner/banner5.png"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content">
+                <div class="content-title">
+                    <div class="content-title-left">
+                        <h2>展览博物馆</h2>
+                        <h4>了解中国文化，争做学习标兵</h4>
+                    </div>
+                    <div class="content-title-right">
+                        <a href="views/museum.html">更多内容</a>
+                        <span><img src="resources/icon/Jump_1.png"></span>
+                    </div>
+                </div>
+                <div class="content-museum-body">
+                    <div class="image04"><a href="views/game.html"><img src="resources/img/index_img/museum_img1.jpg">
+                            <div class="ovrly"></div>
+                        </a></div>
+                    <div class="image04"><a href="views/game.html"><img
+                                src="resources/img/index_img/museum_img2.jpg">
+                                <div class="ovrly"></div>
+                            </a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content">
+                <div class="content-title">
+                    <div class="content-title-left">
+                        <h2>乡土课堂</h2>
+                        <h4>了解中国文化，争做学习标兵</h4>
+                    </div>
+                    <div class="content-title-right">
+                        <a href="views/course-process.html">更多内容</a>
+                        <span><img src="resources/icon/Jump_1.png"></span>
+                    </div>
+                </div>
+                <div class="content-course-body">
+                    <div class="image04"><a href="views/course-modelling.html"><img
+                                src="resources/img/index_img/course_img1.png">
+                            <div class="ovrly"></div>
+                        </a>
+                    </div>
+                    <div class="image04"><a href="views/course-modelling.html"><img
+                                src="resources/img/index_img/course_img2.png">
+                            <div class="ovrly"></div>
+                        </a>
+                    </div>
+                    <div class="image04"><a href="views/course-modelling.html"><img
+                                src="resources/img/index_img/course_img3.png">
+                            <div class="ovrly"></div>
+                        </a>
+                    </div>
+                    <div class="image04"><a href="views/course-modelling.html"><img
+                                src="resources/img/index_img/course_img4.png">
+                            <div class="ovrly"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content">
+                <div class="content-title">
+                    <div class="content-title-left">
+                        <h2>传承社区</h2>
+                        <h4>了解中国文化，争做学习标兵</h4>
+                    </div>
+                    <div class="content-title-right">
+                        <a href="views/community-forum.html">更多内容</a>
+                        <span><img src="resources/icon/Jump_1.png"></span>
+                    </div>
+                </div>
+                <div class="content-community-body clearfloat">
+                    <div class="community-left wow bounceInLeft" data-wow-duration="1s"><img
+                            src="resources/img/index_img/course_img_main.jpg"></div>
+                    <div class="community-right ">
+                        <div class="community-right-title">热点内容</div>
+                        <hr>
+                        <div class="community-right-content">
+                            <ul>
+                                <li><span><img src="resources/img/index_img/community_img1.png"></span>
+                                    <h5>纸”还能当玩具？</h5>
+                                    <p>上周的2019嘉兴文化产业博览会上，海盐馆的“纸”引起了很多孩...</p>
+                                    <a href="http://zjnews.zjol.com.cn/zjnews/jxnews/201906/t20190620_10377701.shtml?tdsourcetag=s_pcqq_aiomsg"></a>
+                                </li>
+                                <li><span><img src="resources/img/index_img/community_img2.png"></span>
+                                    <h5>宁波这个76岁老爷爷火了</h5>
+                                    <p>三分钟能拆装好一个鲁班锁，制作的小水车通上电后就能哗哗地...</p>   
+                                    <a href="http://www.zjol.com.cn/zjxw/201803/t20180314_6792369.shtml"></a>
+                                </li>
+                                <li><span><img src="resources/img/index_img/community_img3.jpg"></span>
+                                    <h5>一不小心玩到几个亿</h5>
+                                    <p>本网9月4日讯 从上世纪七十年代萌芽，温州永嘉县桥下镇的个体...</p>
+                                    <a href="http://www.wzrb.com.cn/article883867show.html"></a>
+                                </li>
+                                <li><span><img src="resources/img/index_img/community_img4.jpg"></span>
+                                    <h5>美丽乡村延续乡土文化</h5>
+                                    <p>仙居县皤滩乡山下村在美丽乡村建设中，立足保护历史文化...</p>
+                                    <a href="http://www.pazjw.gov.cn/pinganjianying/201903/t20190312_9650098.shtml"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="content">
+                <div class="content-title">
+                    <div class="content-title-left">
+                        <h2>我的定制</h2>
+                        <h4>了解中国文化，争做学习标兵</h4>
+                    </div>
+                    <div class="content-title-right">
+                        <a href="views/uilt-views/toOrder_details.html">更多内容</a>
+                        <span><img src="resources/icon/Jump_1.png"></span>
+                    </div>
+                </div>
+                <div class="content-customized-body clearfloat">
+                    <div class="customized-carousel">
+                        <div class="ft-carousel" id="customized-carousel">
+                            <div class="layui-carousel" id="test2" lay-filter="test2">
+                                <div carousel-item="">
+                                    <div><a href="views/uilt-views/toOrder.html"><img
+                                                src="resources/img/index_banner/banner6.png"></a></div>
+                                    <div><a href="views/uilt-views/toOrder.html"><img
+                                                src="resources/img/index_banner/banner7.png"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="customized-imgbox">
+                        <ul>
+                            <li>
+                                <div class="image04"><a href="views/course-modelling.html"><img
+                                            src="resources/img/index_img/myorder_img1.png">
+                                        <div class="ovrly"></div>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="image04"><a href="views/course-modelling.html"><img
+                                            src="resources/img/index_img/myorder_img2.png">
+                                        <div class="ovrly"></div>
+                                    </a></div>
+                            </li>
+                            <li>
+                                <div class="image04"><a href="views/course-modelling.html"><img
+                                            src="resources/img/index_img/myorder_img3.png">
+                                        <div class="ovrly"></div>
+                                </div>
+                                </a>
+                            </li>
+                            <li class="r-margin-none">
+                                <div class="image04"><a href="views/course-modelling.html"><img
+                                            src="resources/img/index_img/myorder_img4.png">
+                                        <div class="ovrly"></div>
+                                </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="backgroud-black-r"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_content_wapper clearfloat">
+            <div class="footer_nav_wapper clearfloat">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="javascript: void(0)" class="footer_nav_title">我是工匠</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">成为工匠</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">创建工作室</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">工作室规范</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="javascript: void(0)" class="footer_nav_title">我是用户</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">注册新用户</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">发布订单</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">我的定制</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">参与讨论</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="javascript: void(0)" class="footer_nav_title">文化保护</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">文化产权保护</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">文创产品</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">活动发布</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">法律顾问</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="javascript: void(0)" class="footer_nav_title">在线课堂</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">玩具制作</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">玩具文化</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">名人工匠</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">热点推荐</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="javascript: void(0)" class="footer_nav_title">虚拟展厅</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">全景模型</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">小游戏</a></li>
+                        </ul>
+                    </li>
+                    <li class="r-margin-none">
+                        <ul>
+                            <li class="li-column"><a href="javascript: void(0)" class="footer_nav_title">联系我们</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">400-123-123</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">wanju@sina.com</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">客服留言</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">团队介绍</a></li>
+                            <li class="li-column"><a href="javascript: void(0)">关于网站</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hr-e">
+            <p>© 版权所有 耍货网页制作团队 技术支持 耍货网页制作团队 </p>
+            <div class="numbers_wapper">
+                <p>网站总访问人数：</p>
+                <p class="visitors_number">9999</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="enrol-box mask">
+        <div class="enrol-box-wapper">
+            <div class="exitbtn clearfloat"><span><img src="resources/icon/exit.png"></span></div>
+            <div class="enrol-title clearfloat">
+                <ul id="enrol-ul">
+                    <li class="click-li">
+                        <p id="enrol_for_phone">手机号注册</p>
+                    </li>
+                    <li>
+                        <p id="enrol_for_e-mail">邮箱注册</p>
+                    </li>
+                    <li class="r-margin-none">
+                        <p id="enrol_for_account">账号注册</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe src="../views/iframe-views/enrol-phone-form.html" frameborder="0" scrolling="no"
+                id="enrol_iframe"></iframe>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/structure.js"></script>
+<script src="layui/layui.all.js"></script>
+<script type="text/javascript">
+    var windowWidth = window.screen.width;
+    var carouselHeight = windowWidth * 0.25;
+    $('.carousel').css('height', carouselHeight + 'px');
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '100%' //设置容器宽度
+            , height: carouselHeight + 'px'
+            , interval: 3000
+            //,anim: 'updown' //切换动画方式
+        });
+        carousel.render({
+            elem: '#test2'
+            , width: '100%' //设置容器宽度
+            , height: '320px'
+            , interval: 5000
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+
+<script>
+//检测用户是否登录
+var userInformation = "";
+function islogin() {
+    var getData = "";
+    $.ajax({
+        type: 'GET',
+        dataType: 'json',
+        async: false,
+        url: 'islogin',
+        success: function (data) {
+            if (data.code == -1 || data.data == null) {
+
+            }
+            if (data.data != null) {
+                getData = data.data
+                
+            }
+        }
+    });
+    return getData;
+}
+var islogin =  islogin();
+if(islogin==""){
+    $(".login-btn").text("登录");
+    $(".login-btn").attr("href", "views/login.html");
+}else if(islogin!=""){
+    var user = get_userById(islogin[0].id);
+    userInformation = user;
+    var login_username = user.data[0].name;
+    $(".login-btn").text("注销");
+    $(".top-nav-center-sign ul").prepend($("<li><a href='views/uilt-views/toMyHomePage.html'>"+login_username+"</a></li>"));
+    $(".login-btn").removeAttr("href");
+    $(".login-btn").click(function () {
+        exitlogin();
+    });
+}
+
+
+function exitlogin() {
+    $.ajax({
+        type: 'GET',
+        dataType: 'text',
+        url: 'exitlogin',
+        success: function (data) {
+            window.location.reload();
+        }
+    });
+}
+
+//获取用户信息
+function get_userById(id) {
+    var getData = "";
+    $.ajax({
+        type: 'GET',
+        dataType: 'json',
+        //设置为true后return不了data
+        async: false,
+        url: 'findUserById?id=' + id,
+        success: function (data) {
+            getData = data;
+        }
+    });
+    return getData;
+}
+</script>
+<script>
+    $('#enrol-ul li').click(function () {
+        $('#enrol-ul li').removeClass('click-li');
+        $(this).addClass('click-li');
+    });
+
+    $('#enrol_for_phone').click(function () {
+        $('#enrol_iframe').attr('src', 'views/iframe-views/enrol-phone-form.html');
+    });
+    $('#enrol_for_e-mail').click(function () {
+        $('#enrol_iframe').attr('src', 'views/iframe-views/enrol-mail-form.html');
+    });
+    $('#enrol_for_account').click(function () {
+        $('#enrol_iframe').attr('src', 'views/iframe-views/enrol-account-form.html');
+    });
+</script>
+
+
+</html>

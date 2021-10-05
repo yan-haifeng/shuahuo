@@ -1,0 +1,131 @@
+#shiqubitong_box{
+    position: absolute;
+    top: 646px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#shiqubitong_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#huarongdao_box{
+    position: absolute;
+    top: 646px;
+    left: 295px;
+    width:  235px;
+    height: 234px;
+}
+
+#huarongdao_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jiulianhuan_box{
+    position: absolute;
+    top: 900px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+}
+
+#jiulianhuan_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jimuma_box{
+    position: absolute;
+    top: 646px;
+    left: 552px;
+    width:  490px;
+    height: 490px;
+}
+
+#jimuma_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jinzitasuoqiu_box{
+    position: absolute;
+    top: 1158px;
+    left: 40px;
+    width:  490px;
+    height: 490px;
+}
+
+#jinzitasuoqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#rigui_box{
+    position: absolute;
+    top: 1158px;
+    left: 552px;
+    width:  235px;
+    height: 234px;
+}
+
+#rigui_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#sanjiaosuo_box{
+    position: absolute;
+    top: 1158px;
+    left: 808px;
+    width:  235px;
+    height: 234px;
+}
+
+#sanjiaosuo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#luzhilu_box{
+    position: absolute;
+    top: 1414px;
+    left: 552px;
+    width:  490px;
+    height: 234px;
+}
+
+#luzhilu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#xiaojizuomi_box{
+    position: absolute;
+    top: 1670px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+}
+
+#xiaojizuomi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#lubashuo_box{
+    position: absolute;
+    top: 1670px;
+    left: 552px;
+    width:  235px;
+    height: 234px;
+}
+
+#lubashuo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#shiwuqiaoban_box{
+    position: absolute;
+    top: 1670px;
+    left: 808px;
+    width:  235px;
+    height: 234px;
+}
+
+#shiwuqiaoban_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

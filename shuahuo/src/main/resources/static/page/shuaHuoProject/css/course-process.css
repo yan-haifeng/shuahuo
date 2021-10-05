@@ -1,0 +1,67 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+
+#p-c{
+    color: #9ebb77;
+}
+
+#i-c{
+    background-color: #9ebb77;
+    visibility: visible;
+}
+
+.main-content-title li{
+    margin-left: 25px;
+}
+
+.main-content-title .click-li{
+    font-family: PingFangSC-Regular !important;
+    color: #998675 !important;
+}
+
+.main-content iframe{
+    position: relative;
+    width: 1080px;
+    height: 3344px;
+    padding-bottom: 0px;
+    left: -40px;
+    margin-top: 8px;
+}
+
+.show_box {
+    position: fixed;
+    width: 600px;
+    height: 560px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50%;
+    margin-left: -300px;
+    background-color: white;
+    background-size: 100% 100%;
+    border-radius: 8px;
+}
+
+.exit_btn {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-image: url(../resources/icon/exit.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.backgroud-black-g{
+    position: absolute;
+    width: 100%;
+    height: 970px;
+    background-color:rgba(104, 155, 51, 0.36);
+    top:505px;
+    z-index:-1;
+}

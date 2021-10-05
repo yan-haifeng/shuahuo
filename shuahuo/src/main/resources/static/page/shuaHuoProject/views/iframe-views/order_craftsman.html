@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/jscrollpane1.css">
+</head>
+
+<body>
+    <div class="talk">
+        <div class="talk_title"><span>联系匠人</span></div>
+        <div class="talk_record">
+            <div id="jp-container" class="jp-container">
+            </div>
+        </div>
+
+        <div class="talk_word">
+            &nbsp;
+            <input class="add_face" id="facial" type="button" value="" />
+            <input class="messages emotion" autocomplete="off" placeholder="在这里输入文字" id="talk_input" />
+            <input class="talk_send" type="button" value="发送" id="submit_btn" />
+        </div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script>
+    //1、location.search获取get请求的参数   获取到的数据，是以?开头的
+    var search = location.search;
+    //2、如果还想要获取确定的数据，可以解析字符串
+    function parse(search) {
+        //从第二个字符开始截取   ，获取到第二个开始后面所有的字符
+        var str = search.substring(1);
+        var result = {};
+        //分割字符串  -->产生字符串数组
+        var strs = str.split("&");
+        //遍历数组中的每一个元素
+        strs.forEach(function (v) {
+            //伪代码：v="age=18"
+            var keyvalue = v.split("=");
+            var name = keyvalue[0];
+            var value = keyvalue[1];
+            result[name] = value;
+        })
+        return result;
+    }
+    var r = parse(search);
+</script>
+<script>
+    //获取当前时间
+    function getNowFormatDate() {
+        var now = new Date();
+        var year = now.getFullYear();       //年
+        var month = now.getMonth() + 1;     //月
+        var day = now.getDate();            //日        
+        var hh = now.getHours();            //时
+        var mm = now.getMinutes();          //分
+        var ss = now.getSeconds();           //秒        
+        var clock = year + "-";
+        if (month < 10)
+            clock += "0";
+        clock += month + "-";
+        if (day < 10)
+            clock += "0";
+        clock += day + " ";
+        if (hh < 10)
+            clock += "0";
+        clock += hh + ":";
+        if (mm < 10) clock += '0';
+        clock += mm + ":";
+        if (ss < 10) clock += '0';
+        clock += ss;
+        return (clock);
+    } 
+</script>
+
+<script>
+    //获取用户信息
+    function get_userById(id) {
+        var getData = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            //设置为true后return不了data
+            async: false,
+            url: '../../findUserById?id=' + id,
+            success: function (data) {
+                getData = data.data;
+            }
+        });
+        return getData;
+    }
+</script>
+<script>
+    $('#jp-container').append('<div class="talk_recordbox"><div class="user"><img src="../../resources/img/hot_studio_img/icon_5d1ab5979bfca.png" />新玛</div><div class="talk_recordtextbg">&nbsp;</div><div class="talk_recordtext"><h3>你好，请问有什么可以帮您的吗？</h3><span class="talk_time" id="now_time"></span></div></div>');
+    $('#now_time').text(getNowFormatDate());
+    var flag = 0;
+    $('#submit_btn').click(function () {  
+        var userInformation = get_userById(r.id);
+        var talk = $('#talk_input').val();
+        if (talk != "") {
+            $('#jp-container').append('<div class="talk_recordboxme"><div class="user" id="username'+flag+'"></div><div class="talk_recordtextbg">&nbsp;</div><div class="talk_recordtext"><h3 id="talk_recordtext'+flag+'"></h3><span class="talk_time" id="talk_time'+flag+'"></span></div></div>');
+            $('#username'+flag+'').text(userInformation[0].name);
+            $('#username'+flag+'').prepend('<img id="user_head_img'+flag+'"/>');
+            $('#user_head_img'+flag+'').attr('src', '../../resources/upload/headimg/' + userInformation[0].headimg_name);
+            $('#talk_time'+flag+'').text(getNowFormatDate());
+            $('#talk_recordtext'+flag+'').text(talk);
+            $('#talk_input').val("");
+            flag++;
+        }
+    });
+</script>
+
+
+
+</html>

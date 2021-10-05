@@ -1,0 +1,221 @@
+<div class="dynamic_personal_data clearfloat"><div class="l_dynamic_box"><div class="head_img"></div></div><div class="r_dynamic_box"><div class="name_box"><p></p></div><div class="text_contest"><span></span></div><div class="dynamic_img_box clearfloat"></div></div></div>
+
+################################################################################################
+
+<div class="dynamic_video"><video src="../resources/upload/video/name" controls="controls">Your browser does not support the video tag.</video></div>
+
+################################################################################################
+
+			<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            	<div class="many_img"><img src="../resources/img/a6.jpg"></div>
+
+################################################################################################
+
+<div class="b_dynamic_box "><ul class="clearfloat"><li><span class="b_dynamic_box_shoucang"></span><p>收藏</p></li><li><span class="b_dynamic_box_zhuanfa"></span><p>转发</p></li><li><span class="b_dynamic_box_pinglun"></span><p>评论</p></li><li class="no-border"><span class="b_dynamic_box_dianzan"></span><p>点赞</p></li></ul></div><div class="weibo_c_icon"><span><img src="../resources/icon/weibo_c.png"></span></div>
+
+################################################################################################
+
+                                <!-- 一条定制 已接单（customization_doing） -->
+                                <div class="customization clearfloat">
+                                    <div class="customization_l">
+                                        <img src="../resources/img/a6.jpg">
+                                    </div>
+                                    <div class="customization_r">
+                                        <p>在这里输入名称在这里输入名称在这里输入名称在这里输入名称</p>
+                                        <p>当前状态</p>
+                                        <div class="customization_now_statu customization_doing">
+                                            已接单
+                                        </div>
+                                    </div>
+                                    <hr class="hr-f">
+                                </div>
+                                 <!-- 一条定制 未接单（customization_missdo） -->
+                                 <div class="customization clearfloat">
+                                    <div class="customization_l">
+                                        <img src="../resources/img/a6.jpg">
+                                    </div>
+                                    <div class="customization_r">
+                                        <p>在这里输入名称在这里输入名称在这里输入名称在这里输入名称</p>
+                                        <p>当前状态</p>
+                                        <div class="customization_now_statu customization_missdo">
+                                            未接单
+                                        </div>
+                                    </div>
+                                    <hr class="hr-f">
+                                </div>
+                                 <!-- 一条定制 已完成（customization_finish） -->
+                                 <div class="customization clearfloat">
+                                    <div class="customization_l">
+                                        <img src="../resources/img/a6.jpg">
+                                    </div>
+                                    <div class="customization_r">
+                                        <p>在这里输入名称在这里输入名称在这里输入名称在这里输入名称</p>
+                                        <p>当前状态</p>
+                                        <div class="customization_now_statu customization_finish">
+                                            已完成
+                                        </div>
+                                    </div>
+                                    <hr class="hr-f">
+                                </div>
+
+################################################################################################
+		<!-- 一条动态 -->
+                                <div class="dynamic_personal_data clearfloat">
+                                    <div class="dynamic_wapper clearfloat">
+                                        <div class="l_dynamic_box">
+                                            <!-- 头像 -->
+                                            <div class="head_img"></div>
+                                        </div>
+                                        <div class="r_dynamic_box">
+                                            <!-- 用户姓名 -->
+                                            <div class="name_box">
+                                                <p>用户姓名(多图)</p>
+                                                <span>2019-07-22 14:38:39</span><span>发布于</span><span>杭州</span>
+                                            </div>
+                                            <!-- 动态主要内容 -->
+                                            <div class="text_contest" id="a">
+                                                <span>
+                                                    文章描述文章描述文章描述文章描述文章描述文章描述文章描述文章描述
+                                                    <br>
+                                                    文章描述文章描述文章描述文章描述文章描述文章描述文章描述文章描述
+                                                    <br>
+                                                    文章描述文章描述文章描述文章描述文章描述文章描述文章描述文章描述
+                                                    <br>
+                                                    文章描述文章描述文章描述文章描述文章描述文章描述
+                                                    <br>
+                                                    文章描述文章描述文章描述
+                                                    <br>
+                                                    文章描述文章描述
+                                                    <br>
+                                                    文章描述文章描述:ku::a:
+                                                </span>
+                                            </div>
+                                            <!-- 用户上传的图片或视频 -->
+                                            <div class="dynamic_img_box clearfloat">
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                                <div class="many_img"><img src="../resources/img/a6.jpg"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 收藏点赞 -->
+                                    <div class="b_dynamic_box ">
+                                        <ul class="clearfloat">
+                                            <li><span class="b_dynamic_box_shoucang"></span>
+                                                <p>收藏</p>
+                                            </li>
+                                            <li><span class="b_dynamic_box_zhuanfa"></span>
+                                                <p>转发</p>
+                                            </li>
+                                            <li><span class="b_dynamic_box_pinglun"></span>
+                                                <p>评论</p>
+                                            </li>
+                                            <li class="no-border" id="b_dynamic_box_dianzan_li"><span
+                                                    class="b_dynamic_box_dianzan"></span>
+                                                <p>点赞</p>
+                                                <p>(</p>
+                                                <p id="b_dynamic_box_dianzan_num">10</p>
+                                                <p>)</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="weibo_c_icon">
+                                        <span><img src="../resources/icon/weibo_c.png"></span>
+                                    </div>
+                                    <!-- 评论框 -->
+                                    <div class="comment_box">
+                                        <div class="comment_input_wapper">
+                                            <form action="">
+                                                <div class="comment_input_wapper_box clearfloat">
+                                                    <div class="comment_box_head_box">
+                                                        <img src="../resources/img/touxaing.jpg">
+                                                    </div>
+                                                    <div class="comment_input_box">
+                                                        <input type="text" name="comment_text" id="comment_input"
+                                                            class="comment_input">
+                                                        <input type="text" name="dynamic_id" id="dynamic_id"
+                                                            class="hidden_input">
+                                                        <input type="text" name="u_id" id="u_id" class="hidden_input">
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="comment_func_area clearfloat">
+                                                <div class="l_comment_func_area">
+                                                    <ul>
+                                                        <li><button class="comment_emoji_btn"
+                                                                id="comment_emoji_btn"></button></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="r_comment_func_area">
+                                                    <div class="comment_subumit_btn">
+                                                        评论
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment_wapper">
+                                            <!-- 一条评论 -->
+                                            <div class="comment_personal_data clearfloat">
+                                                <div class="l_comment_personal_data">
+                                                    <div class="l_comment_personal_head_box">
+                                                        <img src="../resources/img/touxaing.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="r_comment_personal_data">
+                                                    <p class="comment_personal_data_username">用户名</p>
+                                                    <p>：</p>
+                                                    <p class="comment_personal_data_text">
+                                                        哇哈哈哈哈哈哈哈哈哇哈哈哈哈哈哈哈哈哇哈哇哈哇哈哇哈哈哈哈哈哇哈哇哈哈哈哈哈哇哈哇哈哈哈哈哈哇哈哇哈哈哈哈哈哇哈哇哈哈哈哈哈哇哈哇哈哈哈哈哈哇哈哇哈哈哈哈哈哈哈哈哈哈哈
+                                                    </p>
+                                                    <div class="comment_personal_data_statu_box clearfloat">
+                                                        <div class="comment_personal_data_statu_box_time">2019-07-22
+                                                            14:38:39</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+################################################################################################
+
+<div class="comment_input_wapper"><form action=""><div class="comment_input_wapper_box clearfloat"><div class="comment_box_head_box"><img src="../resources/img/touxaing.jpg"></div><div class="comment_input_box"><input type="text" name="" id="comment_input" class="comment_input"></div></div></form><div class="comment_func_area clearfloat"><div class="l_comment_func_area"><ul><li><button class="comment_emoji_btn" id="comment_emoji_btn"></button></li></ul></div><div class="r_comment_func_area"><div class="comment_subumit_btn">评论</div></div></div></div>
+
+################################################################################################
+
+<div class="comment_personal_data clearfloat"><div class="l_comment_personal_data"><div class="l_comment_personal_head_box"><img src="../resources/img/touxaing.jpg"></div></div><div class="r_comment_personal_data"><p class="comment_personal_data_username"></p><p>：</p><p class="comment_personal_data_text"></p><div class="comment_personal_data_statu_box clearfloat"><div class="comment_personal_data_statu_box_time"></div></div></div></div>
+
+################################################################################################
+
+<li id="studio_img_li"><div class="have_img" id="studio_img1_btn"><i class="exit"></i><imgsrc="../resources/img/a6.jpg"></div></li>
+
+################################################################################################
+
+<form action="" id="members_form"><div class="members_information clearfloat"><div class="members_information_l"><div class="members_information_text"><p class="studio_text">真实名称</p></div><div class="members_information_l_input"><input type="text" name="" id="" placeholder="给你的工作室起个名字吧！"></div><div class="members_information_text"><p class="studio_text">身份证件号</p></div><div class="members_information_l_input"><input type="text" name="" id="" placeholder="给你的工作室起个名字吧！"></div<div class="members_information_text"><p class="studio_text">联系方式</p><p class="studio_text havecolor">（手机号码）</p></div><div class="members_information_l_input"><input type="text" name="" id="" placeholder="给你的工作室起个名字吧！"></div></div><div class="members_information_r"><div class="members_information_r_logoimg"><img src="../resources/img/a6.jpg"><div class="members_information_upload_head">点我上传头像</div></div></div></div><div class="members_resume"><p class="studio_text">添加履历（头衔，职称，获奖，匠龄等）</p><div class="members_resume_wapper"><textarea name=""  i="" placeholder="输入您的信息"></textarea></div></div><div class="hr-b"></div></form>
+
+################################################################################################
+
+<div class="order"><div class="order_main_content"><div class="order_img"><img src="../resources/img/a6.jpg" id="order_img"></div><!-- 订单名称 --><div class="order_text"><p id="order_title"></p><p id="order_context"></p></div><div class="order_location"><span></span><p>杭州</p></div><div class="hr-d order_hr_location_a"></div><!-- 订单价格 --><div class="order_price"><div><p>￥</p><p id="order_price">1000.00</p></div></div><div class="hr-d order_hr_location_b"></div><div class="accept_details" id="order_mode">未接单</div><a class="accept_details_a" href="order-details.html" id="order_link">查看订单详情</a><div class="hr-d order_hr_location_c"></div><div class="finish_btn" id="order_finish_btn">定制完成</div></div><div class="hr-b"></div></div>
+
+
+################################################################################################
+
+<div class="customization clearfloat"><div class="customization_l"><img id="order_img"></div><div class="customization_r"><p id="order_title"></p><p id="order_context"></p><p>当前状态</p><div class="customization_now_statu" id="order_statu">已接单</div></div><hr class="hr-f"></div>
+
+
+################################################################################################
+
+<div class="order"><div class="order_top_wapper clearfloat"><p class="l_order_top_wapper_p">第10972单</p><p class="r_order_top_wapper_p">交易进行中</p></div><div class="order_mid_wapper"><p class="order_title">拨浪鼓</p><div class="order_price"><p>报价：￥</p><p>600</p></div><div class="order_requirements"><p>具体要求：</p><p>要安全讲课</p></div><div class="order_img_wapper"><div class="order_img"><img src="../resources/img/a5.jpg"></div><div class="order_img"><img src="../resources/img/a5.jpg"></div><div class="order_img"><img src="../resources/img/a5.jpg"></div><div class="order_img"><img src="../resources/img/a5.jpg"></div></div><div class="order_btn_wapper clearfloat"><div class="order_btn_box"><div class="order_btn">接受</div><div class="order_btn">拒绝</div></div><div class="order_statu_select_wapper"><form action="" class="layui-form"><div class="layui-input-block"><select name="order_statu" lay-verify="required"><option value="1">已接单</option><option value="2">制作中</option><option value="3">交付中</option></select></div></form></div><div class="finish_wapper"><p>已完成</p></div><div class="refuse_wapper"><p>已拒绝</p></div></div></div></div>

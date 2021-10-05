@@ -1,0 +1,119 @@
+#dinzifeibiao_box{
+    position: absolute;
+    top: 603px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#dinzifeibiao_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tiegongji_box{
+    position: absolute;
+    top: 603px;
+    left: 295px;
+    width:  235px;
+    height: 234px;
+}
+
+#tiegongji_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#zixingche_box{
+    position: absolute;
+    top: 858px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+}
+
+#zixingche_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tietuoluo_box{
+    position: absolute;
+    top: 603px;
+    left: 552px;
+    width:  490px;
+    height: 490px;
+}
+
+#tietuoluo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jiulianhuan_box{
+    position: absolute;
+    top: 1116px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+}
+
+#jiulianhuan_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tiepao_box{
+    position: absolute;
+    top: 1116px;
+    left: 552px;
+    width:  235px;
+    height: 234px;
+}
+
+#tiepao_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tanke_box{
+    position: absolute;
+    top: 1116px;
+    left: 807px;
+    width:  235px;
+    height: 234px;
+}
+
+#tanke_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tiequan_box{
+    position: absolute;
+    top: 1374px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#tiequan_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#lianfatiaoqingwa_box{
+    position: absolute;
+    top: 1374px;
+    left: 295px;
+    width:  235px;
+    height: 234px;
+}
+
+#lianfatiaoqingwa_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tiemotuo_box{
+    position: absolute;
+    top: 1375px;
+    left: 552px;
+    width:  490px;
+    height: 234px;
+}
+
+#tiemotuo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

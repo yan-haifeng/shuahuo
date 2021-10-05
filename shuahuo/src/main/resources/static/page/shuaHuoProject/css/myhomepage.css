@@ -1,0 +1,706 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+
+.no-border{
+    border: none !important;
+}
+
+.main-content{
+    min-height: 1000px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+/* 头像栏 */
+.head_box{
+    width: 100%;
+    height: 320px;
+    background-image: url(../resources/img/a6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.head_box .user_head_wapper{
+    width: 128px;
+    height: 164.5px;
+    margin: auto;
+    position: relative;
+    top: 65px;
+}
+
+.head_box .user_head_wapper .head_wapper{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.head_box .user_head_wapper .head_wapper img{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.head_box .user_head_wapper p{
+    width: 128px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* 二级导航栏 */
+.my_double_nav_wapper{
+    width: 100%;
+    height: 60px;
+    background-color: #efeadd;
+}
+
+.my_double_nav_wapper ul{
+    position: relative;
+    width: 600px;
+    height: 100%;
+    margin: auto;
+}
+
+.my_double_nav_wapper ul li{
+    width: 116px;
+    height: 60px;
+}
+
+.my_double_nav_wapper ul .nav_myhomepage{
+    position: absolute;
+    left: 0px;
+}
+
+.my_double_nav_wapper ul .nav_personalcenter{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my_double_nav_wapper ul .nav_accountmanagement{
+    position: absolute;
+    right: 0px;
+}
+
+.my_double_nav_wapper ul li a{
+    display: block;
+    width: 116px;
+    height: 60px;
+    color: #000;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.my_double_nav_wapper ul .click-li a{
+    color: #fff;
+    background-color: rgba(103, 51, 1, 0.6);
+}
+
+.my_double_nav_wapper ul li:hover a{
+    color: #fff;
+    background-color: rgba(103, 51, 1, 0.6);
+}
+
+/* 主要内容 */
+.home_mainpage_wapper{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 左栏 */
+.home_mainpage_wapper .home_mainpage_wapper_l{
+    width: 410px;
+    float: left;
+}
+
+/* 关注 */
+.attention_wapper{
+    width: 100%;
+    height: 76px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.attention_wapper ul{
+    height: 100%;
+}
+
+.attention_wapper li{
+    height: 100%;
+    width: 136px;
+    border-right: 1px #cccccc solid;
+}
+
+.attention_wapper li p{
+    font-family: PingFangSC-Regular;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    line-height: 22px;
+}
+
+.attention_wapper li .attention_wapper_num{
+    color: #333333;
+    font-size: 20px;
+    font-family: PingFangSC-bold;
+}
+
+.attention_wapper li .attention_wapper_title{
+    color: #808080;
+    font-size: 14px;
+}
+
+/* 相册 */
+.photo_album{
+    width: 100%;
+    height: 710px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.photo_album .photo_album_title{
+    width: 100%;
+    height: 52px;
+}
+
+.photo_album .photo_album_title p{
+    height: 52px;
+    line-height: 52px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+}
+
+.photo_album .photo_album_photo_wapper{
+    width: 100%;
+    height: 610px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo_album .photo_album_photo_wapper .photo_album_photo{
+    width: 190px;
+    height: 190px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.photo_album .photo_album_photo_wapper .photo_album_photo img{
+    width: 100%;
+    height: 100%;
+}
+
+.photo_album_see_more{
+    width: 100%;
+    height: 50px;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 右栏 */
+.home_mainpage_wapper .home_mainpage_wapper_r{
+    width: 650px;
+    float: right;
+}
+
+/* 微博导航栏 */
+.blog_nav_wapper{
+    width: 650px;
+    height: 76px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.blog_nav_wapper .top_nav{
+    width: 100%;
+    height: 45px;
+}
+
+.blog_nav_wapper .top_nav .li_l{
+    height: 45px;
+    width: 400px;
+    float: left;  
+}
+
+.blog_nav_wapper .top_nav .li_l ul{
+    margin-left: 24px;
+    height: 100%;
+}
+
+.blog_nav_wapper .top_nav li{
+    position: relative;
+    height: 100%;
+    display: block; 
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.blog_nav_wapper .top_nav li p{
+    font-size: 14px;
+    color: #000000;
+    font-family: PingFangSC-Regular;
+    line-height: 45px;
+}
+
+.blog_nav_wapper .top_nav li span{
+    position: absolute;
+    height: 11px;
+    width: 13px;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.blog_nav_wapper .top_nav li span img{
+    width: 100%;
+    height: 100%;
+}
+
+.blog_nav_wapper .top_nav .li_r{
+    float: right; 
+    height: 45px;
+    width: 250px;
+}
+
+.blog_nav_wapper .top_nav .li_r .blog_search_wapper{
+    width: 174px;
+    height: 24px;
+    margin-top: 10px;
+    margin-left: 70px;
+    border: #cccccc 0.5px solid;
+}
+
+.blog_nav_wapper .top_nav .li_r .blog_search_wapper input{
+    width: 155px;
+    height: 20px;
+    margin-top: 2px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    color: #b3b3b3;
+    font-family: PingFangSC-Regular;
+}
+
+.blog_nav_wapper .bottom_nav{
+    position: relative;
+    width: 100%;
+    height: 31px;
+    background-color: rgba(250, 2, 1, 0.6);
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.blog_nav_wapper .bottom_nav p{
+    height: 100%;
+    position: relative;
+    font-size: 12px;
+    color: #ffffff;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* 微博显示 */
+/* 微博动态样式 */
+.friend_dynamic_wapper{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.dynamic_box{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.no_dynamic{
+    width: 100%;
+    height: 710px;
+    border-radius: 2px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 300px;
+    color: #999999;
+    font-family: PingFangSC-Regular;
+    font-size: 22px;
+    display: none;
+}
+
+.dynamic_box .dynamic_personal_data{
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 2px;
+}
+
+.dynamic_wapper{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    padding-bottom: 2px;
+}
+
+.l_dynamic_box{
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.l_dynamic_box .head_img{
+    width: 49px;
+    height: 49px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background-image: url(../resources/img/touxaing.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.r_dynamic_box{
+    width: 550px;
+    float: left;
+}
+
+.r_dynamic_box .name_box{
+    height: 45px;
+    margin-bottom: 5px;
+}
+
+.r_dynamic_box .name_box p{
+    color: #000;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.r_dynamic_box .name_box span{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    color: #999999;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.r_dynamic_box .text_contest{
+    margin-bottom: 5px;
+}
+
+.r_dynamic_box .text_contest span{
+    color: #333;
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.r_dynamic_box .dynamic_img_box{
+    width: 450px;
+    height: auto;
+}
+
+.r_dynamic_box .dynamic_img_box .many_img{
+    width: 110px;
+    height: 110px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.r_dynamic_box .dynamic_img_box .one_img{
+    width: 100%;
+    height: 100%;
+}
+
+.r_dynamic_box .dynamic_img_box img{
+    width: 100%;
+    height: 100%;
+}
+
+.r_dynamic_box .dynamic_img_box .dynamic_video{
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
+
+.r_dynamic_box .dynamic_img_box .dynamic_video video{
+    width: 100%;
+    height: 100%;
+}
+
+.b_dynamic_box{
+    width: 100%;
+    height: 39px;
+}
+
+.b_dynamic_box ul{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.b_dynamic_box li{
+    width: 160px;
+    height: 100%;
+    border-right: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.b_dynamic_box li span{
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 58px;
+}
+
+.b_dynamic_box li p{
+    position: relative;
+    top: -2px;
+    left: 62px;
+    display: inline-block;
+    color: #808080;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+}
+
+.b_dynamic_box li .b_dynamic_box_shoucang{
+    background-image: url(../resources/icon/shoucang_a.png);
+}
+
+.b_dynamic_box li .b_dynamic_box_zhuanfa{
+    background-image: url(../resources/icon/zhuanfa_a.png);
+}
+
+.b_dynamic_box li .b_dynamic_box_pinglun{
+    background-image: url(../resources/icon/pinglun_a.png);
+}
+
+.b_dynamic_box li .b_dynamic_box_dianzan{
+    background-image: url(../resources/icon/dianzan_a.png);
+}
+
+.no-border{
+    border: none !important;
+}
+
+.weibo_c_icon{
+    width: 15px;
+    height: 8px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+/* 评论框 */
+.comment_box{
+    background-color: #f2f2f2;
+    width: 100%;
+    border-top: 0.75px solid #cccccc;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-sizing: border-box;
+    padding: 20px;
+    display: none;
+}
+
+.comment_box .comment_input_wapper{
+    width: 100%;
+    height: 80px;
+    border-bottom: 0.75px solid #cccccc;
+}
+
+.comment_box .comment_input_wapper .comment_input_wapper_box{
+    width: 100%;
+    height: 30px;
+}
+
+.comment_box .comment_input_wapper .comment_input_wapper_box .comment_box_head_box{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    float: left;
+}
+
+.comment_box .comment_input_wapper .comment_input_wapper_box .comment_box_head_box img{
+    width: 30px;
+    height: 30px;
+}
+
+.comment_box .comment_input_wapper .comment_input_wapper_box .comment_input_box{
+    height: 30px;
+    width: 560px;
+    border: #cccccc 1px solid;
+    box-sizing: border-box;
+    float: left;
+}
+
+.comment_box .comment_input_wapper .comment_input_wapper_box .comment_input_box input{
+    height: 24px;
+    width: 520px;
+    border: none;
+    outline: none;
+    margin-top: 3px;
+    margin-left: 20px;
+    color: #333333;
+    font-family: PingFangSC-Light;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+.comment_box .comment_input_wapper .comment_func_area{
+    margin-top: 10px;
+    width: 100%;
+    height: 26px;
+}
+
+.comment_box .comment_input_wapper .comment_func_area .l_comment_func_area{
+    float: left;
+    width: 56px;
+    height: 24px;
+    margin-left: 40px;
+}
+
+.comment_box .comment_input_wapper .comment_func_area .l_comment_func_area li{
+    position: relative;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+.l_comment_func_area button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+}
+
+.comment_box .comment_input_wapper .comment_func_area .l_comment_func_area li .comment_emoji_btn{
+    width: 18px;
+    height: 18px;
+    background-image: url(../resources/icon/smile.png);
+    background-size: 100% 100%;
+}
+
+.comment_box .comment_input_wapper .comment_func_area .l_comment_func_area li .comment_img_btn{
+    width: 20px;
+    height: 18px;
+    background-image: url(../resources/icon/picture.png);
+    background-size: 100% 100%;
+}
+
+.comment_box .comment_input_wapper .comment_func_area .r_comment_func_area{
+    float: right;
+    height: 24px;
+    width: 60px;
+    background-color: rgba(250, 2, 1, 0.6);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 24px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* 评论 */
+.comment_box .comment_wapper{
+    width: 100%;
+}
+
+.comment_box .comment_wapper .comment_personal_data{
+    margin-top: 20px;
+}
+
+.comment_box .comment_wapper .comment_personal_data .l_comment_personal_data{
+    float: left;
+    width: 40px;
+    height: 100%;
+}
+
+.comment_box .comment_wapper .comment_personal_data .l_comment_personal_data .l_comment_personal_head_box{
+    width: 30px;
+    height: 30px;
+}
+
+.comment_box .comment_wapper .comment_personal_data .l_comment_personal_data .l_comment_personal_head_box img{
+    width: 30px;
+    height: 30px;
+}
+
+.comment_box .comment_wapper .comment_personal_data .r_comment_personal_data{
+    width: 570px;
+    min-height: 30px;
+    float: left;
+}
+
+.comment_box .comment_wapper .comment_personal_data .r_comment_personal_data p{
+    display: inline;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #333;
+}
+
+.comment_box .comment_wapper .comment_personal_data .r_comment_personal_data span{
+    display: inline;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #333;
+}
+
+.comment_box .comment_wapper .comment_personal_data .r_comment_personal_data .comment_personal_data_username{
+    color: #eb7350;
+}
+
+.comment_box .comment_wapper .comment_personal_data .r_comment_personal_data .comment_personal_data_statu_box{
+    width: 100%;
+    height: 16px;
+}
+
+.comment_box .comment_wapper .comment_personal_data .r_comment_personal_data .comment_personal_data_statu_box .comment_personal_data_statu_box_time{
+    float: left;
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #808080;
+}
+
+.hidden_input{
+    display: none;
+}
+
+
+.backgroud-black-brown{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(103, 51, 1, 0.6);
+    top:390px;
+    z-index:-1;
+}

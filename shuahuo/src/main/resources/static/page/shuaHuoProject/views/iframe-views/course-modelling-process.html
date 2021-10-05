@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/structure.css">
+    <link rel="stylesheet" href="../../css/structure-min.css">
+    <link rel="stylesheet" href="../../css/ft-carousel.css" />
+    <link rel="stylesheet" href="../../css/main-content-title.css">
+    <link rel="stylesheet" href="../../css/course-modelling-iframe.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="main-content-title clearfloat">
+            <ul id="content-tetle-ul">
+                <li class="l-margin-none">
+                    <p>工艺：</p>
+                </li>
+                <li class="click-li" id="diaojuan_li">
+                    <div>雕镌</div>
+                </li>
+                <li>
+                    <div>编结</div>
+                </li>
+                <li>
+                    <div>塑作</div>
+                </li>
+                <li>
+                    <div>缝纫</div>
+                </li>
+
+                <li>
+                    <div>裱扎</div>
+                </li>
+                <li>
+                    <div>陶埏</div>
+                </li>
+            </ul>
+        </div>
+        <hr class="hr-a">
+        <!-- iframe -->
+        <iframe src="course-modelling-process-diaojuan.html" frameborder="0" scrolling="no" id="process_iframe"></iframe>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/click-content-tetle.js"></script>
+<script>
+    //点击li跳转iframe
+    $(function () {
+        $('#process_iframe').css('height', '1632px');
+        $('#modelling-iframe', parent.document).css('height', '1632px');
+        //竹木
+        $('#diaojuan_li').click(function () {
+            $('#material_iframe').attr('src', 'course-modelling-process-diaojuan.html');
+            $('#material_iframe').css('height', '1632px');
+            $('#modelling-iframe', parent.document).css('height', '1632px');
+        });
+    });
+</script>
+</html>

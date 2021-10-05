@@ -1,0 +1,9 @@
+form{
+    margin: 30px;
+}
+
+.bottom-btn{
+    width: 88%;
+    position: absolute;
+    bottom: 30px;
+}

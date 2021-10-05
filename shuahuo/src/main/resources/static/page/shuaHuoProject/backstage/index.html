@@ -1,0 +1,89 @@
+<!doctype html>
+<html class="x-admin-sm">
+
+<head>
+    <meta charset="UTF-8">
+    <title>耍货后台管理登录</title>
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+        content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=0.8,target-densitydpi=low-dpi" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/xadmin.css">
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+      <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        .layui-btn {
+            background-color: #BB5FB4;
+            height: 50px !important;
+            margin-top: 20px;
+            line-height: 50px !important;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body class="login-bg">
+
+    <div class="login layui-anim layui-anim-up">
+        <div class="message">耍货后台管理登录</div>
+        <div id="darkbannerwrap"></div>
+
+        <form method="post" class="layui-form">
+            <input name="username" id="username" placeholder="用户名" type="text" lay-verify="required"
+                class="layui-input">
+            <hr class="hr15">
+            <input name="password" id="password" lay-verify="required" placeholder="密码" type="password"
+                class="layui-input">
+            <hr class="hr15">
+            <div lay-filter="login" style="width:100%;" id="login-btn" class="layui-btn layui-btn-fluid">
+                登录
+            </div>
+            <hr class="hr20">
+        </form>
+    </div>
+    <!-- 底部结束 -->
+</body>
+<script src="lib/layui/layui.js" charset="utf-8"></script>
+<script>
+    $(function () {
+        $("#login-btn").click(
+            function () {
+                var username = $('#username').val();
+                var password = $('#password').val();
+                $.ajax({
+                    type: 'POST',
+                    dataType: 'json',
+                    url: '../backaccountlogin',
+                    data: {
+                        "username": username,
+                        "password": password
+                    },
+                    xhrFields: {
+                        withCredentials: true//允许带上凭据
+                    },
+                    crossDomain: true,
+                    success: function (data) {
+                        if (data.code == 0) {
+                            //登录成功
+                            window.location.href = "homepage.html"
+                        } else {
+                            //登录失败 显示msg信息
+                            layui.use('layer', function () {
+                                var layer = layui.layer;
+                                layer.msg(data.msg);
+                            });
+                        }
+                    }
+                });
+            }
+        );
+    });
+</script>
+
+</html>

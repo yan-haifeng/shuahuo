@@ -1,0 +1,47 @@
+#zhubiancaoxia_box{
+    position: absolute;
+    top: 637px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#zhubiancaoxia_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#cujvqiu_box{
+    position: absolute;
+    top: 637px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#cujvqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#zhudaxiang_box{
+    position: absolute;
+    top: 637px;
+    left: 548px;
+    width:  235px;
+    height: 234px;
+}
+
+#zhudaxiang_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#guoguolong_box{
+    position: absolute;
+    top: 637px;
+    left: 803px;
+    width:  235px;
+    height: 234px;
+}
+
+#guoguolong_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

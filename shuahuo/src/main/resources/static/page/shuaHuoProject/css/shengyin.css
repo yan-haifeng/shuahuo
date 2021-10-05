@@ -1,0 +1,131 @@
+#yinyuehe_box{
+    position: absolute;
+    top: 595px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#yinyuehe_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#koudi_box{
+    position: absolute;
+    top: 595px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#koudi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#zhushaozi_box{
+    position: absolute;
+    top: 595px;
+    left: 551px;
+    width:  490px;
+    height: 490px;
+}
+
+#zhushaozi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bolanggu_box{
+    position: absolute;
+    top: 849px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+}
+
+#bolanggu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#xizaoya_box{
+    position: absolute;
+    top: 1105px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#xizaoya_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#guoguolong_box{
+    position: absolute;
+    top: 1105px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#guoguolong_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fatiaoqingwa_box{
+    position: absolute;
+    top: 1105px;
+    left: 551px;
+    width:  235px;
+    height: 234px;
+}
+
+#fatiaoqingwa_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bangzi_box{
+    position: absolute;
+    top: 1105px;
+    left: 807px;
+    width:  235px;
+    height: 234px;
+}
+
+#bangzi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hailuo_box{
+    position: absolute;
+    top: 1363px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#hailuo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fengling_box{
+    position: absolute;
+    top: 1363px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#fengling_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#shouyaoling_box{
+    position: absolute;
+    top: 1363px;
+    left: 551px;
+    width:  490px;
+    height: 234px;
+}
+
+#shouyaoling_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

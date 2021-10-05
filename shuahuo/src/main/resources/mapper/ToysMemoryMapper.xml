@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.ToysMemoryMapper">
+
+    <!-- 得到所有的玩具前世今生信息 -->
+    <select id="findAllToysMemory" resultType="ToysMemory">
+        select
+        *
+        from toys_memory
+    </select>
+
+    <!-- 根据id查找某个玩具前世今生信息 -->
+    <select id="selectToysMemoryById" resultType="ToysMemory" parameterType="java.lang.Integer" >
+        select
+        *
+        from toys_memory where toys_memory_id = #{toys_memory_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据玩具id查找某个玩具前世今生信息 -->
+    <select id="selectToysMemoryByToysId" resultType="ToysMemory" parameterType="java.lang.Integer" >
+        select
+        *
+        from toys_memory where toys_id = #{toys_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据id删除某个玩具前世今生信息 -->
+    <delete id="deleteToysMemoryByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from toys_memory where toys_memory_id = #{toys_memory_id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条玩具前世今生信息 -->
+    <insert id="insertToysMemorySelective" parameterType="com.shuahuo.bean.ToysMemory" >
+        insert into toys_memory
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="toys_memory_id != null" >
+                toys_memory_id,
+            </if>
+            <if test="toys_id != null" >
+                toys_id,
+            </if>
+            <if test="toys_memory_title != null" >
+                toys_memory_title,
+            </if>
+            <if test="toys_memory_img_one != null" >
+                toys_memory_img_one,
+            </if>
+            <if test="toys_memory_img_two != null" >
+                toys_memory_img_two,
+            </if>
+            <if test="toys_memory_img_context != null" >
+                toys_memory_img_context,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="toys_memory_id != null" >
+                #{toys_memory_id,jdbcType=INTEGER},
+            </if>
+            <if test="toys_id != null" >
+                #{toys_id,jdbcType=INTEGER},
+            </if>
+            <if test="toys_memory_title != null" >
+                #{toys_memory_title,jdbcType=VARCHAR},
+            </if>
+            <if test="toys_memory_img_one != null" >
+                #{toys_memory_img_one,jdbcType=VARCHAR},
+            </if>
+            <if test="toys_memory_img_two != null" >
+                #{toys_memory_img_two,jdbcType=VARCHAR},
+            </if>
+            <if test="toys_memory_img_context != null" >
+                #{toys_memory_img_context,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条玩具前世今生信息 -->
+    <update id="updateToysMemoryByPrimaryKeySelective" parameterType="com.shuahuo.bean.ToysMemory" >
+        update toys_memory
+        <set >
+            <if test="toys_id != null" >
+                toys_id = #{toys_id,jdbcType=INTEGER},
+            </if>
+            <if test="toys_memory_title != null" >
+                toys_memory_title = #{toys_memory_title,jdbcType=INTEGER},
+            </if>
+            <if test="toys_memory_img_one != null" >
+                toys_memory_img_one = #{toys_memory_img_one,jdbcType=VARCHAR},
+            </if>
+            <if test="toys_memory_img_two != null" >
+                toys_memory_img_two = #{toys_memory_img_two,jdbcType=VARCHAR},
+            </if>
+            <if test="toys_memory_img_context != null" >
+                toys_memory_img_context = #{toys_memory_img_context,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where toys_memory_id = #{toys_memory_id,jdbcType=INTEGER}
+    </update>
+</mapper>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.StudioMemberMapper">
+
+    <!-- 得到所有的工作室成员信息 -->
+    <select id="findAllStudio_member" resultType="StudioMember">
+        select
+        *
+        from studio_member
+    </select>
+
+    <!-- 根据id查找某个工作室成员信息 -->
+    <select id="selectStudio_memberById" resultType="StudioMember" parameterType="java.lang.Integer" >
+        select
+        *
+        from studio_member where studio_member_id = #{studio_member_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据studio_id查找某个工作室成员信息 -->
+    <select id="selectStudio_memberByStudioId" resultType="StudioMember" parameterType="java.lang.Integer" >
+        select
+        *
+        from studio_member where studio_id = #{studio_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据id删除某个工作室成员信息 -->
+    <delete id="deleteStudio_memberByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from studio_member where studio_member_id = #{studio_member_id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条工作室成员信息 -->
+    <insert id="insertStudio_memberSelective" parameterType="com.shuahuo.bean.StudioMember" >
+        insert into studio_member
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="studio_member_id != null" >
+                studio_member_id,
+            </if>
+            <if test="studio_id != null" >
+                studio_id,
+            </if>
+            <if test="studio_member_name != null" >
+                studio_member_name,
+            </if>
+            <if test="studio_member_id_card != null" >
+                studio_member_id_card,
+            </if>
+            <if test="studio_member_phone_num != null" >
+                studio_member_phone_num,
+            </if>
+            <if test="studio_member_record != null" >
+                studio_member_record,
+            </if>
+            <if test="studio_member_head_img != null" >
+                studio_member_head_img,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="studio_member_id != null" >
+                #{studio_member_id,jdbcType=INTEGER},
+            </if>
+            <if test="studio_id != null" >
+                #{studio_id,jdbcType=INTEGER},
+            </if>
+            <if test="studio_member_name != null" >
+                #{studio_member_name,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_id_card != null" >
+                #{studio_member_id_card,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_phone_num != null" >
+                #{studio_member_phone_num,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_record != null" >
+                #{studio_member_record,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_head_img != null" >
+                #{studio_member_head_img,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条工作室成员信息 -->
+    <update id="updateStudio_memberByPrimaryKeySelective" parameterType="com.shuahuo.bean.StudioMember" >
+        update studio_member
+        <set >
+            <if test="studio_id != null" >
+                studio_id = #{studio_id,jdbcType=INTEGER},
+            </if>
+            <if test="studio_member_name != null" >
+                studio_member_name = #{studio_member_name,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_id_card != null" >
+                studio_member_id_card = #{studio_member_id_card,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_phone_num != null" >
+                studio_member_phone_num = #{studio_member_phone_num,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_record != null" >
+                studio_member_record = #{studio_member_record,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_member_head_img != null" >
+                studio_member_head_img = #{studio_member_head_img,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where studio_member_id = #{studio_member_id,jdbcType=INTEGER}
+    </update>
+</mapper>

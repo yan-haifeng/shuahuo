@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/structure.css">
+    <link rel="stylesheet" href="../css/structure-min.css">
+    <link rel="stylesheet" href="../css/ft-carousel.css" />
+    <link rel="stylesheet" href="../css/viewer.min.css">
+    <link rel="stylesheet" href="../css/studiohomepage.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <title>耍货</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="top-nav">
+                <div class="top-nav-center">
+                    <div class="top-nav-center-city">
+                        <ul>
+                            <li><span><img src="../resources/icon/position_1.png"></span></li>
+                            <!-- 后期后台 修改 -->
+                            <li>杭州</li>
+                            <li>
+                                <p>[切换城市]</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav-center-sign">
+                        <ul>
+                            <li><a href="login.html" class="login-btn">登录</a></li>
+                            <li><a class="enrol-btn">注册</a></li>
+                            <li class="r-margin-none"><a href="uilt-views/toOrder_details.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-nav">
+                <div class="middle-nav-logo"><img src="../resources/icon/logo.gif"></div>
+                <div class="middle-nav-search">
+                    <div class="middle-nav-search-boder">
+                        <div class="middle-nav-search-input">
+                            <span><img src="../resources/icon/search_1.png"></span>
+                            <form action="#">
+                                <input type="text" placeholder="浙江最热门的手工艺品">
+                            </form>
+                        </div>
+                        <div class="middle-nav-search-btn">搜索</div>
+                    </div>
+                    <div class="middle-nav-search-recent">
+                        <ul>
+                                <li><a href="https://www.baidu.com/s?wd=最热手工品在线订购" target="_blank">最热手工品在线订购</a></li>
+                                <li><a href="https://www.baidu.com/s?wd=浙江传统文献" target="_blank">浙江传统文献</a></li>
+                                <li><a href="https://www.baidu.com/s?wd=扇子的制作流程" target="_blank">扇子的制作流程</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li id="h-page"><a href="../index.html" id="p-a">首页<i id="i-a"></i></a></li>
+                    <li id="museum"><a href="museum.html" id="p-b">展览博物馆<i id="i-b"></i></a></li>
+                    <li id="course"><a href="course-process.html" id="p-c">乡土课程<i id="i-c"></i></a>
+                        <ul class="course-drop-nav">
+                            <li><a href="course-process.html">制作流程</a></li>
+                            <li><a href="course-modelling.html">工艺造型</a></li>
+                            <li><a href="course-structure.html">结构原理</a></li>
+                        </ul>
+                    </li>
+                    <li id="community"><a href="community-forum.html" id="p-d">传承社区<i id="i-d"></i></a>
+                    </li>
+                    <li id="custom" class="r-margin-none"><a href="uilt-views/toOrder_details.html" id="p-e">我的定制<i
+                                id="i-e"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- 此处书写主体内容 -->
+        <div class="main-wapper">
+            <div class="link-wapper clearfloat">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li>></li>
+                    <li><a href="community-forum.html">传承社区</a></li>
+                    <li>></li>
+                    <li><a href="community-forum.html">找工匠</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <!-- 此处书写主体内容  -->
+                <!-- 头像栏 -->
+                <div class="head_box">
+                    <div class="user_head_wapper">
+                        <div class="head_wapper">
+                            <img src="../resources/img/touxaing.jpg" id="studio_head_img">
+                        </div>
+                        <p id="studio_name">工作室名</p>
+                    </div>
+                </div>
+                <!-- 二级导航栏 -->
+                <div class="my_double_nav_wapper clearfloat">
+                    <ul>
+                        <li>
+                            <div class="text_wapper">
+                                <p>工匠人数：</p>
+                                <p id="studio_member_num">7</p>
+                                <p>人</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text_wapper">
+                                <p>接单数：</p>
+                                <p>10972</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="text_wapper">
+                                <p>类型：</p>
+                                <p id="studio_begoodat">陶泥</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="my_double_nav_wapper clearfloat">
+                    <div class="hr-b"></div>
+                    <div class="text_wapper">
+                        <p>描述：</p>
+                        <p id="studio_introduction">接单迅速，完成高效</p>
+                    </div>
+                </div>
+                <!-- 主要内容 -->
+                <div class="home_mainpage_wapper clearfloat">
+                    <div class="home_mainpage_wapper_l">
+                        <!-- 成员信息 -->
+                        <div class="photo_album">
+                            <div class="photo_album_title">
+                                <p>成员信息</p>
+                            </div>
+                            <hr class="hr-f">
+                            <div class="photo_album_photo_wapper" id="studio_member_wapper">
+
+                            </div>
+                            <hr class="hr-f">
+                            <div class="photo_album_see_more">
+                                查看更多
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home_mainpage_wapper_r">
+                        <!-- 轮播图 -->
+                        <div class="studio_img_wapper">
+                            <div class="layui-carousel" id="carousel">
+                                <div carousel-item id="studio_img_wapper">
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 订单 -->
+                        <div class="my_order_wapper">
+                            <!-- 订单动态显示地 -->
+                            <div class="order_box" id="order_box">
+                                <!-- 一条订单 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroud-black-brown"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_content_wapper clearfloat">
+            <div class="footer_nav_wapper clearfloat">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是工匠</a></li>
+                            <li class="li-column"><a href="#">成为工匠</a></li>
+                            <li class="li-column"><a href="#">创建工作室</a></li>
+                            <li class="li-column"><a href="#">工作室规范</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是用户</a></li>
+                            <li class="li-column"><a href="#">注册新用户</a></li>
+                            <li class="li-column"><a href="#">发布订单</a></li>
+                            <li class="li-column"><a href="#">我的定制</a></li>
+                            <li class="li-column"><a href="#">参与讨论</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">文化保护</a></li>
+                            <li class="li-column"><a href="#">文化产权保护</a></li>
+                            <li class="li-column"><a href="#">文创产品</a></li>
+                            <li class="li-column"><a href="#">活动发布</a></li>
+                            <li class="li-column"><a href="#">法律顾问</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">在线课堂</a></li>
+                            <li class="li-column"><a href="#">玩具制作</a></li>
+                            <li class="li-column"><a href="#">玩具文化</a></li>
+                            <li class="li-column"><a href="#">名人工匠</a></li>
+                            <li class="li-column"><a href="#">热点推荐</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">虚拟展厅</a></li>
+                            <li class="li-column"><a href="#">全景模型</a></li>
+                            <li class="li-column"><a href="#">小游戏</a></li>
+                        </ul>
+                    </li>
+                    <li class="r-margin-none">
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">联系我们</a></li>
+                            <li class="li-column"><a href="#">400-123-123</a></li>
+                            <li class="li-column"><a href="#">wanju@sina.com</a></li>
+                            <li class="li-column"><a href="#">客服留言</a></li>
+                            <li class="li-column"><a href="#">团队介绍</a></li>
+                            <li class="li-column"><a href="#">关于网站</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hr-e">
+            <p>© 版权所有 耍货网页制作团队 技术支持 耍货网页制作团队 </p>
+            <div class="numbers_wapper">
+                <p>网站总访问人数：</p>
+                <p class="visitors_number">9999</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="enrol-box mask">
+        <div class="enrol-box-wapper">
+            <div class="exitbtn clearfloat"><span><img src="../resources/icon/exit.png"></span></div>
+            <div class="enrol-title clearfloat">
+                <ul id="enrol-ul">
+                    <li class="click-li">
+                        <p id="enrol_for_phone">手机号注册</p>
+                    </li>
+                    <li>
+                        <p id="enrol_for_e-mail">邮箱注册</p>
+                    </li>
+                    <li class="r-margin-none">
+                        <p id="enrol_for_account">账号注册</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe src="../views/iframe-views/enrol-phone-form.html" frameborder="0" scrolling="no"
+                id="enrol_iframe"></iframe>
+        </div>
+    </div>
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/structure.js"></script>
+<script src="../js/tologin.js"></script>
+<script src="../js/enrol.js"></script>
+<script src="../js/viewer-jquery.min.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script src="../js/studiohomepage.js"></script>
+<script src="../js/layer.js"></script>
+
+
+
+<script>
+    //让背景与body一样高
+    $(".backgroud-black-brown").css("height", ($("body").css("height").substring(0, $("body").css("height").length - 2) - 457) + "px");
+    $(window).scroll(function () {
+        $(".backgroud-black-brown").css("height", ($("body").css("height").substring(0, $("body").css("height").length - 2) - 457) + "px");
+    });
+</script>
+
+
+<script>
+var id = get_id().id;
+var studio = get_studio(id);
+setup_studio(studio);
+
+
+layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#carousel'
+            , width: '100%' //设置容器宽度
+            , height: '100%'
+            , arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+</html>

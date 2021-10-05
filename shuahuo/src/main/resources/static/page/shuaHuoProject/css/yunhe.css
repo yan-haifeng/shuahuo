@@ -1,0 +1,61 @@
+#mumache_box{
+    position: absolute;
+    top: 637px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#mumache_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#huarongdao_box{
+    position: absolute;
+    top: 637px;
+    left: 296px;
+    width:  235px;
+    height: 234px;
+}
+
+#huarongdao_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jiqiaoqiu_box{
+    position: absolute;
+    top: 637px;
+    left: 805px;
+    width:  235px;
+    height: 490px;
+}
+
+#jiqiaoqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fuyunmuqiao_box{
+    position: absolute;
+    top: 893px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+
+}
+
+#fuyunmuqiao_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#fengce_box{
+    position: absolute;
+    top: 893px;
+    left: 550px;
+    width:  235px;
+    height: 234px;
+
+}
+
+#fengce_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

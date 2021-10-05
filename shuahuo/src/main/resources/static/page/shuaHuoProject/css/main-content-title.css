@@ -1,0 +1,20 @@
+.main-content-title{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.main-content-title ul li p{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #999999;
+}
+
+.main-content-title li{
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #000000;
+    margin-left: 75px;
+    cursor: pointer;
+}
+

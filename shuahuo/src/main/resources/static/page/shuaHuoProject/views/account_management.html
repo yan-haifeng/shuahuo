@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/structure.css">
+    <link rel="stylesheet" href="../css/structure-min.css">
+    <link rel="stylesheet" href="../css/ft-carousel.css" />
+    <link rel="stylesheet" href="../css/account_management.css">
+    <title>耍货</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="top-nav">
+                <div class="top-nav-center">
+                    <div class="top-nav-center-city">
+                        <ul>
+                            <li><span><img src="../resources/icon/position_1.png"></span></li>
+                            <!-- 后期后台 修改 -->
+                            <li>杭州</li>
+                            <li>
+                                <p>[切换城市]</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav-center-sign">
+                        <ul>
+                            <li><a href="login.html" class="login-btn">登录</a></li>
+                            <li><a class="enrol-btn">注册</a></li>
+                            <li class="r-margin-none"><a href="uilt-views/toOrder_details.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-nav">
+                <div class="middle-nav-logo"><img src="../resources/icon/logo.gif"></div>
+                <div class="middle-nav-search">
+                    <div class="middle-nav-search-boder">
+                        <div class="middle-nav-search-input">
+                            <span><img src="../resources/icon/search_1.png"></span>
+                            <form action="#">
+                                <input type="text" placeholder="浙江最热门的手工艺品">
+                            </form>
+                        </div>
+                        <div class="middle-nav-search-btn">搜索</div>
+                    </div>
+                    <div class="middle-nav-search-recent">
+                        <ul>
+                            <li><a href="https://www.baidu.com/s?wd=最热手工品在线订购" target="_blank">最热手工品在线订购</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=浙江传统文献" target="_blank">浙江传统文献</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=扇子的制作流程" target="_blank">扇子的制作流程</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li id="h-page"><a href="../index.html" id="p-a">首页<i id="i-a"></i></a></li>
+                    <li id="museum"><a href="museum.html" id="p-b">展览博物馆<i id="i-b"></i></a></li>
+                    <li id="course"><a href="course-process.html" id="p-c">乡土课程<i id="i-c"></i></a>
+                        <ul class="course-drop-nav">
+                            <li><a href="course-process.html">制作流程</a></li>
+                            <li><a href="course-modelling.html">工艺造型</a></li>
+                            <li><a href="course-structure.html">结构原理</a></li>
+                        </ul>
+                    </li>
+                    <li id="community"><a href="community-forum.html" id="p-d">传承社区<i id="i-d"></i></a>
+                    </li>
+                    <li id="custom" class="r-margin-none"><a href="uilt-views/toOrder_details.html" id="p-e">我的定制<i
+                                id="i-e"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- 此处书写主体内容 -->
+        <div class="main-wapper">
+            <div class="link-wapper clearfloat">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li>></li>
+                    <li><a href="community-forum.html">传承社区</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <!-- 此处书写主体内容  -->
+                <!-- 头像栏 -->
+                <div class="head_box">
+                    <div class="user_head_wapper">
+                        <div class="head_wapper">
+                            <img src="../resources/img/touxaing.jpg" id="user_head_img">
+                        </div>
+                        <p id="user_name">用户名</p>
+                    </div>
+                </div>
+                <!-- 二级导航栏 -->
+                <div class="my_double_nav_wapper">
+                    <ul class="clearfloat">
+                        <li class="nav_myhomepage"><a href="myhomepage.html">我的主页</a></li>
+                        <li class="nav_personalcenter"><a href="ersonal-center.html">个人中心</a></li>
+                        <li class="nav_accountmanagement click-li"><a href="account_management.html">账户管理</a></li>
+                    </ul>
+                </div>
+                <!-- 主要内容 -->
+                <div class="home_mainpage_wapper clearfloat">
+                    <div class="home_mainpage_wapper_l">
+                        <!-- 粉丝、关注、消息 -->
+                        <div class="attention_wapper">
+                            <ul class="clearfloat">
+                                <li>
+                                    <p class="attention_wapper_num">185</p>
+                                    <p class="attention_wapper_title">关注</p>
+                                </li>
+                                <li>
+                                    <p class="attention_wapper_num">48</p>
+                                    <p class="attention_wapper_title">粉丝</p>
+                                </li>
+                                <li class="no-border">
+                                    <p class="attention_wapper_num">75</p>
+                                    <p class="attention_wapper_title">消息</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 我的定制 -->
+                        <div class="my_customization">
+                            <div class="customization_title">
+                                <p>我的定制</p>
+                            </div>
+                            <hr class="hr-f">
+                            <!-- 此处添加我的定制内容 -->
+                            <div class="customization_content" id="orderlist">
+                                <div class="no_customization" id="no_customization">
+                                    空空如也~
+                                    <hr class="hr-f">
+                                </div>
+                            </div>
+                            <div class="customization_see_more">
+                                查看更多
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home_mainpage_wapper_r">
+                        <!-- 修改用户名、密码、手机号、邮箱 -->
+                        <div class="settin_wapper">
+                            <div class="basic_information_title">
+                                <p>账户设置</p>
+                            </div>
+                            <hr class="hr-f">
+
+                            <div class="basic_information">
+                                <!-- 账号 -->
+                                <div class="information_box">
+                                    <p>账号</p>
+                                    <div class="information_input_box disabled"> <input type="text"
+                                            id="user_username_input" disabled></div>
+                                    <a href="javascript: void(0)" class="settin" id="settin_username_btn">修改账号</a>
+                                </div>
+                                <!-- 密码 -->
+                                <div class="information_box">
+                                    <p>密码</p>
+                                    <div class="information_input_box disabled"> <input type="password"
+                                            id="user_password_input" disabled></div>
+                                    <a href="javascript: void(0)" class="settin" id="settin_password_btn">修改密码</a>
+                                </div>
+                                <!-- 手机号 -->
+                                <div class="information_box">
+                                    <p>手机号</p>
+                                    <div class="information_input_box disabled"> <input type="text"
+                                            id="user_phonenum_input" disabled></div>
+                                    <a href="javascript: void(0)" class="settin" id="settin_phonenum_btn">修改手机号</a>
+                                </div>
+                                <!-- 邮箱 -->
+                                <div class="information_box">
+                                    <p>邮箱</p>
+                                    <div class="information_input_box disabled"> <input type="text"
+                                            id="user_e_mail_input" disabled></div>
+                                    <a href="javascript: void(0)" class="settin" id="settin_mail_btn">修改邮箱</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroud-black-brown"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_content_wapper clearfloat">
+            <div class="footer_nav_wapper clearfloat">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是工匠</a></li>
+                            <li class="li-column"><a href="#">成为工匠</a></li>
+                            <li class="li-column"><a href="#">创建工作室</a></li>
+                            <li class="li-column"><a href="#">工作室规范</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是用户</a></li>
+                            <li class="li-column"><a href="#">注册新用户</a></li>
+                            <li class="li-column"><a href="#">发布订单</a></li>
+                            <li class="li-column"><a href="#">我的定制</a></li>
+                            <li class="li-column"><a href="#">参与讨论</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">文化保护</a></li>
+                            <li class="li-column"><a href="#">文化产权保护</a></li>
+                            <li class="li-column"><a href="#">文创产品</a></li>
+                            <li class="li-column"><a href="#">活动发布</a></li>
+                            <li class="li-column"><a href="#">法律顾问</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">在线课堂</a></li>
+                            <li class="li-column"><a href="#">玩具制作</a></li>
+                            <li class="li-column"><a href="#">玩具文化</a></li>
+                            <li class="li-column"><a href="#">名人工匠</a></li>
+                            <li class="li-column"><a href="#">热点推荐</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">虚拟展厅</a></li>
+                            <li class="li-column"><a href="#">全景模型</a></li>
+                            <li class="li-column"><a href="#">小游戏</a></li>
+                        </ul>
+                    </li>
+                    <li class="r-margin-none">
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">联系我们</a></li>
+                            <li class="li-column"><a href="#">400-123-123</a></li>
+                            <li class="li-column"><a href="#">wanju@sina.com</a></li>
+                            <li class="li-column"><a href="#">客服留言</a></li>
+                            <li class="li-column"><a href="#">团队介绍</a></li>
+                            <li class="li-column"><a href="#">关于网站</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hr-e">
+            <p>© 版权所有 耍货网页制作团队 技术支持 耍货网页制作团队 </p>
+            <div class="numbers_wapper">
+                <p>网站总访问人数：</p>
+                <p class="visitors_number">9999</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="enrol-box mask">
+        <div class="enrol-box-wapper">
+            <div class="exitbtn clearfloat"><span><img src="../resources/icon/exit.png"></span></div>
+            <div class="enrol-title clearfloat">
+                <ul id="enrol-ul">
+                    <li class="click-li">
+                        <p id="enrol_for_phone">手机号注册</p>
+                    </li>
+                    <li>
+                        <p id="enrol_for_e-mail">邮箱注册</p>
+                    </li>
+                    <li class="r-margin-none">
+                        <p id="enrol_for_account">账号注册</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe src="../views/iframe-views/enrol-phone-form.html" frameborder="0" scrolling="no"
+                id="enrol_iframe"></iframe>
+        </div>
+    </div>
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/tologin.js"></script>
+<script src="../js/enrol.js"></script>
+<script src="../layui/layui.js"></script>
+<script src="../js/structure.js"></script>
+<script src="../js/modification-user-data.js"></script>
+
+<script>
+    $(function () {
+        //让背景与body一样高
+        $(".backgroud-black-brown").css("height", ($("body").css("height").substring(0, $("body").css("height").length - 2) - 457) + "px");
+    });
+</script>
+
+<script>
+    function settinUsername() {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            layer.open({
+                type: 2,
+                content: ['iframe-views/settin-username.html?id='+userid, 'no'],
+                title: '修改账号',
+                area: ['340px', '340px']
+            });
+        });
+    }
+
+    function settinPassword() {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            layer.open({
+                type: 2,
+                content: ['iframe-views/settin-password.html?id='+userid, 'no'],
+                title: '修改密码',
+                area: ['340px', '340px']
+            });
+        });
+    }
+
+    function settinPhoneNum() {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            layer.open({
+                type: 2,
+                content: ['iframe-views/settin-phonenum.html?id='+userid, 'no'],
+                title: '修改手机号',
+                area: ['340px', '300px']
+            });
+        });
+    }
+
+    function settinMail() {
+        layui.use('layer', function () {
+            var layer = layui.layer;
+            layer.open({
+                type: 2,
+                content: ['iframe-views/settin-mail.html?id='+userid, 'no'],
+                title: '修改手机号',
+                area: ['340px', '300px']
+            });
+        });
+    }
+
+    $(function(){
+        $('#settin_username_btn').click(function(){
+            settinUsername();
+        });
+        $('#settin_password_btn').click(function(){
+            settinPassword();
+        });
+        $('#settin_phonenum_btn').click(function(){
+            settinPhoneNum();
+        });
+        $('#settin_mail_btn').click(function(){
+            settinMail();
+        });
+    });
+</script>
+
+</html>

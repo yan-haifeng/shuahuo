@@ -1,0 +1,444 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+#p-d{
+    color: #9c7b58;
+}
+
+#i-d{
+    background-color: #9c7b58;
+    visibility: visible;
+}
+
+.main-content{
+    position: relative;
+    width: 1080px;
+    height: auto;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 150px;
+}
+
+.content-title{
+    margin-bottom: 15px;
+}
+
+.content-title h1{
+    font-family: PingFangSC-bold;
+    font-size: 28px;
+    color: #000000;
+}
+
+.content-main{
+    width: 830px;
+    margin: auto;
+}
+
+.studio_information_wapper{
+    width: 1000px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+
+.studio_information_wapper .studio_information_title{
+    width: 100%;
+    height: 60px;
+    background-color: #efeadd;
+    color: rgba(103, 51, 1, 0.6);
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.studio_information{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.studio_information .studio_information_l{
+    width: 400px;
+    float: left;
+}
+
+.studio_information .studio_information_l .studio_information_text{
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.studio_text{
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #000000;
+    display:inline-block;
+}
+
+.havecolor{
+    color: rgba(103, 51, 1, 0.6);
+}
+
+.studio_information .studio_information_l .studio_information_l_input{
+    width: 400px;
+    height: 54px;
+    margin-bottom: 20px;
+    border: #cccccc 0.75px solid;
+}
+
+.studio_information .studio_information_l .studio_information_l_btn{
+    width: 400px;
+    height: 54px;
+    margin-bottom: 20px;
+    border: #cccccc 0.75px solid;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #757575;
+    line-height: 54px;
+    padding-left: 35px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.studio_information .studio_information_l .studio_information_l_input input{
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #000000;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+}
+
+.studio_information .studio_information_r{
+    float: right;
+}
+
+.studio_information .studio_information_r .studio_information_r_logoimg{
+    width: 130px;
+    height: 162px;
+    margin-top: 35px;
+    margin-right: 113px;
+}
+
+.studio_information .studio_information_r .studio_information_r_logoimg img{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.studio_information .studio_information_r .studio_information_r_logoimg p{
+    width: 128px;
+    height: 34px;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #000000;
+    text-align: center;
+}
+
+/* 上传图片模块 */
+.studio_introduction h5{
+    margin-top: 20px;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #b3b3b3;
+}
+
+.studio_introduction .imglist{
+    height: 202px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+.studio_introduction .imglist li{
+    width: 190px;
+    height: 190px;
+    margin-right: 10px;
+}
+
+.studio_introduction .imglist li .have_img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.studio_introduction .imglist li .have_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.studio_introduction .imglist li .have_img .exit{
+    position: absolute;
+    top: -18px;
+    left: -18px;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    background-image: url(../resources/icon/exit_2.png);
+    background-size: 100% 100%;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.studio_introduction .imglist li .no_img{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #cccccc;
+    background-image: url(../resources/icon/noimg.png);
+    background-size: 80px 89.855px;
+    background-repeat: no-repeat;
+    background-position-x: 55px;
+    background-position-y: 60px;
+    box-sizing: border-box;
+}
+
+.studio_introduction .studio_introduction_wapper{
+    width: 100%;
+    height: 140px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    outline: none;
+    border: none;
+    resize:none;
+    overflow:hidden;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000000;
+}
+
+.studio_talent{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.studio_talent .studio_talent_l{
+    float: left;
+    width: 230px;
+}
+
+.studio_talent .studio_talent_r{
+    float: left;
+    width: 600px;
+}
+
+.studio_talent .studio_talent_r li{
+    width: 90px;
+    height: 44px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    font-family: PingFangSC-Regular;
+    background-color: #e6e6e6;
+    text-align: center;
+    line-height: 44px;
+    cursor: pointer;
+}
+
+.studio_talent .studio_talent_r .li-click{
+    background-color: rgba(103, 51, 1, 0.6);
+    color: #fff;
+}
+
+.studio_description{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.studio_description .studio_text_input_wapper{
+    width: 828px;
+    height: 52px;
+    border: 0.75px #cccccc solid;
+    margin-top: 15px;
+}
+
+.studio_description .studio_text_input_wapper input{
+    position: relative;
+    width: 800px;
+    height: 40px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #000000;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 20px;
+    outline: none;
+    border: none;
+}
+
+.members_information_wapper{
+    width: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.members_information_title{
+    width: 100%;
+    height: 60px;
+    background-color: #efeadd;
+    color: rgba(103, 51, 1, 0.6);
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.members_information{
+    width: 100%;
+    margin-top: 30px;
+}
+
+.members_information .members_information_l{
+    width: 400px;
+    float: left;
+}
+
+.members_information .members_information_l .members_information_text{
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.members_information .members_information_l .members_information_l_input{
+    width: 400px;
+    height: 54px;
+    margin-bottom: 20px;
+    border: #cccccc 0.75px solid;
+}
+
+.members_information .members_information_l .members_information_l_input input{
+    position: relative;
+    width: 350px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #000000;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 35px;
+}
+
+.members_information .members_information_r{
+    float: right;
+}
+
+.members_information .members_information_r .members_information_r_logoimg{
+    position: relative;
+    width: 188px;
+    height: 310px;
+    top: 30px;
+    right: 72px;
+}
+
+.members_information .members_information_r .members_information_r_logoimg img{
+    width: 188px;
+    height: 254px;
+}
+
+.members_information .members_information_r .members_information_r_logoimg .members_information_upload_head{
+    width: 188px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.members_resume{
+    margin-bottom: 20px;
+}
+
+.members_resume .members_resume_wapper{
+    margin-top: 10px;
+    width: 100%;
+    height: 108px;
+    border: 0.75px #cccccc solid;
+}
+
+.members_resume .members_resume_wapper textarea{
+    width: 800px;
+    height: 90px;
+    outline: none;
+    border: none;
+    resize:none;
+    overflow:hidden;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    color: #000000;
+    position: relative;
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+/* 添加成员 */
+
+.add_delete_members_wapper{
+    display: inline-block;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.add_members{
+    display: inline-block;
+    cursor: pointer;
+    
+}
+
+.delete_members{
+    display: none;
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.add_delete_members_wapper span{
+    position: relative;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    top: -3px;
+    margin-right: 10px;
+}
+
+.add_delete_members_wapper span img{
+    width: 27px;
+    height: 27px;
+}
+
+.add_delete_members_wapper p{
+    display: inline-block;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #cccccc;
+}
+
+/* 提交按钮 */
+.become_craftsman_submit_btn{
+    width: 300px;
+    height: 54px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    background-color: rgba(103, 51, 1, 0.6);
+    color: #fff;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    text-align: center;
+    line-height: 54px;
+    cursor: pointer;
+}

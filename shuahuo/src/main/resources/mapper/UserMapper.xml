@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.UserMapper">
+
+    <!-- 得到所有的用户信息 -->
+    <select id="findAllUser" resultType="User">
+        select
+        *
+        from user_form
+    </select>
+
+    <!-- 根据用户名查找某个用户信息 -->
+    <select id="selectUserByUsername" resultType="User" parameterType="java.lang.String" >
+        select
+        *
+        from user_form where username = #{name,jdbcType=VARCHAR}
+    </select>
+
+    <!-- 根据手机号查找某个用户信息 -->
+    <select id="selectUserByPhonenum" resultType="User" parameterType="java.lang.String" >
+        select
+        *
+        from user_form where phonenum = #{name,jdbcType=VARCHAR}
+    </select>
+
+    <!-- 根据手机号查找某个用户信息 -->
+    <select id="selectUserByMail" resultType="User" parameterType="java.lang.String" >
+        select
+        *
+        from user_form where e_mail = #{name,jdbcType=VARCHAR}
+    </select>
+
+    <!-- 根据id查找某个用户信息 -->
+    <select id="selectUserById" resultType="User" parameterType="java.lang.Integer" >
+        select
+        *
+        from user_form where id = #{name,jdbcType=VARCHAR}
+    </select>
+
+    <!-- 根据id删除某个用户信息 -->
+    <delete id="deleteUserByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from user_form where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条用户信息 -->
+    <insert id="insertUserSelective" parameterType="com.shuahuo.bean.User" >
+        insert into user_form
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                id,
+            </if>
+            <if test="username != null" >
+                username,
+            </if>
+            <if test="password != null" >
+                password,
+            </if>
+            <if test="name != null" >
+                name,
+            </if>
+            <if test="province != null" >
+                province,
+            </if>
+            <if test="city != null" >
+                city,
+            </if>
+            <if test="county != null" >
+                county,
+            </if>
+            <if test="sex != null" >
+                sex,
+            </if>
+            <if test="age != null" >
+                age,
+            </if>
+            <if test="phonenum != null" >
+                phonenum,
+            </if>
+            <if test="qqnum != null" >
+                qqnum,
+            </if>
+            <if test="e_mail != null" >
+                e_mail,
+            </if>
+            <if test="occupation != null" >
+                occupation,
+            </if>
+            <if test="correlation_for_handicraft != null" >
+                correlation_for_handicraft,
+            </if>
+            <if test="personality_label != null" >
+                personality_label,
+            </if>
+            <if test="headimg_name != null" >
+                headimg_name,
+            </if>
+            <if test="studio_id != null" >
+                studio_id,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="id != null" >
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="username != null" >
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null" >
+                #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null" >
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null" >
+                #{province,jdbcType=VARCHAR},
+            </if>
+            <if test="city != null" >
+                #{city,jdbcType=VARCHAR},
+            </if>
+            <if test="county != null" >
+                #{county,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null" >
+                #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="age != null" >
+                #{age,jdbcType=INTEGER},
+            </if>
+            <if test="phonenum != null" >
+                #{phonenum,jdbcType=VARCHAR},
+            </if>
+            <if test="qqnum != null" >
+                #{qqnum,jdbcType=INTEGER},
+            </if>
+            <if test="e_mail != null" >
+                #{e_mail,jdbcType=VARCHAR},
+            </if>
+            <if test="occupation != null" >
+                #{occupation,jdbcType=VARCHAR},
+            </if>
+            <if test="correlation_for_handicraft != null" >
+                #{correlation_for_handicraft,jdbcType=INTEGER},
+            </if>
+            <if test="personality_label != null" >
+                #{personality_label,jdbcType=VARCHAR},
+            </if>
+            <if test="headimg_name != null" >
+                #{headimg_name,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_id != null" >
+                #{studio_id,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条用户信息 -->
+    <update id="updateUserByPrimaryKeySelective" parameterType="com.shuahuo.bean.User" >
+        update user_form
+        <set >
+            <if test="username != null" >
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="password != null" >
+                password = #{password,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null" >
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="province != null" >
+                province = #{province,jdbcType=VARCHAR},
+            </if>
+            <if test="city != null" >
+                city = #{city,jdbcType=VARCHAR},
+            </if>
+            <if test="county != null" >
+                county = #{county,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null" >
+                sex = #{sex,jdbcType=INTEGER},
+            </if>
+            <if test="age != null" >
+                age = #{age,jdbcType=INTEGER},
+            </if>
+            <if test="phonenum != null" >
+                phonenum = #{phonenum,jdbcType=VARCHAR},
+            </if>
+            <if test="qqnum != null" >
+                qqnum = #{qqnum,jdbcType=INTEGER},
+            </if>
+            <if test="e_mail != null" >
+                e_mail = #{e_mail,jdbcType=VARCHAR},
+            </if>
+            <if test="occupation != null" >
+                occupation = #{occupation,jdbcType=VARCHAR},
+            </if>
+            <if test="correlation_for_handicraft != null" >
+                correlation_for_handicraft = #{correlation_for_handicraft,jdbcType=INTEGER},
+            </if>
+            <if test="personality_label != null" >
+                personality_label = #{personality_label,jdbcType=VARCHAR},
+            </if>
+            <if test="headimg_name != null" >
+                headimg_name = #{headimg_name,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_id != null" >
+                studio_id = #{studio_id,jdbcType=INTEGER},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+</mapper>

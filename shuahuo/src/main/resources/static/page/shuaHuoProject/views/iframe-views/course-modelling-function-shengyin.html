@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/shengyin.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main-div {
+            position: relative;
+            width: 1080px;
+            height: 1807px;
+            background-image: url(../../resources/img/modelling_function_img/shengyin.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div id="yinyuehe_box"></div>
+        <div id="koudi_box"></div>
+        <div id="zhushaozi_box"></div>
+        <div id="bolanggu_box"></div>
+        <div id="xizaoya_box"></div> 
+        <div id="guoguolong_box"></div> 
+        <div id="fatiaoqingwa_box"></div> 
+        <div id="bangzi_box"></div> 
+        <div id="hailuo_box"></div> 
+        <div id="fengling_box"></div> 
+        <div id="shouyaoling_box"></div> 
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/show_toy_box.js"></script>
+<script>
+    $(function () {
+        $('#yinyuehe_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/yinyuehe.png';
+            show_box(url);
+        });
+        $('#koudi_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/koudi.png';
+            show_box(url);
+        });
+        $('#zhushaozi_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/zhushaozi.png';
+            show_box(url);
+        });
+        $('#bolanggu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/bolanggu.png';
+            show_box(url);
+        });
+        $('#xizaoya_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/xizaoya.png';
+            show_box(url);
+        });
+        $('#guoguolong_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/guoguolong.png';
+            show_box(url);
+        });
+        $('#fatiaoqingwa_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/fatiaoqingwa.png';
+            show_box(url);
+        });
+        $('#bangzi_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/bangzi.png';
+            show_box(url);
+        });
+        $('#hailuo_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/hailuo.png';
+            show_box(url);
+        });
+        $('#fengling_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/fengling.png';
+            show_box(url);
+        });
+        $('#shouyaoling_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/shouyaoling.png';
+            show_box(url);
+        });
+    });
+</script>
+
+</html>

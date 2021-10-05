@@ -1,0 +1,95 @@
+#jianzi_box{
+    position: absolute;
+    top: 635px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#jianzi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#youyouqiu_box{
+    position: absolute;
+    top: 635px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#youyouqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#tuoluo_box{
+    position: absolute;
+    top: 889px;
+    left: 40px;
+    width:  490px;
+    height: 234px;
+}
+
+#tuoluo_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#kongzhu_box{
+    position: absolute;
+    top: 635px;
+    left: 552px;
+    width:  490px;
+    height: 490px;
+}
+
+#kongzhu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#jiqiaoqiu_box{
+    position: absolute;
+    top: 1147px;
+    left: 40px;
+    width:  235px;
+    height: 234px;
+}
+
+#jiqiaoqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#muzuqiu_box{
+    position: absolute;
+    top: 1147px;
+    left: 294px;
+    width:  235px;
+    height: 234px;
+}
+
+#muzuqiu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#bolidanzhu_box{
+    position: absolute;
+    top: 1147px;
+    left: 552px;
+    width:  235px;
+    height: 234px;
+}
+
+#bolidanzhu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#shabao_box{
+    position: absolute;
+    top: 1147px;
+    left: 806px;
+    width:  235px;
+    height: 234px;
+}
+
+#shabao_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

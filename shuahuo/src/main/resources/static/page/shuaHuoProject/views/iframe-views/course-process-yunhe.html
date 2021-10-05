@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/yunhe.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .main-div{
+            position: relative;
+            width: 1080px;
+            height: 3497px;
+            background-image: url(../../resources/img/process_img/yunhe.jpg);
+            background-repeat: no-repeat;
+        }
+        .main-div video{
+            position: absolute;
+            top: 1280px;
+            left: 131px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+            <video src="../../resources/video/process_video/yunhe.mp4" width="820px" height="580px" controls="controls">
+                Your browser does not support the video tag.
+            </video>
+            <div id="mumache_box"></div>
+            <div id="huarongdao_box"></div>
+            <div id="jiqiaoqiu_box"></div>
+            <div id="fuyunmuqiao_box"></div>
+            <div id="fengce_box"></div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/show_toy_box.js"></script>
+<script>
+    $(function(){
+        $('#mumache_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/mumache.png';
+            show_boxs(url);
+        });
+        $('#huarongdao_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/huarongdao.png';
+            show_boxs(url);
+        });
+        $('#jiqiaoqiu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/jiqiaoqiu.png';
+            show_boxs(url);
+        });
+        $('#fuyunmuqiao_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/fuyunmuqiao.png';
+            show_boxs(url);
+        });
+        $('#fengce_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/fengce.png';
+            show_boxs(url);
+        });
+    });     
+</script>
+</html>

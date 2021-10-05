@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/jingshu.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main-div {
+            position: relative;
+            width: 1080px;
+            height: 1915px;
+            background-image: url(../../resources/img/modelling_material_img/jingshu.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div id="dinzifeibiao_box"></div>
+        <div id="tiegongji_box"></div>
+        <div id="zixingche_box"></div>
+        <div id="tietuoluo_box"></div>
+        <div id="jiulianhuan_box"></div>
+        <div id="tiepao_box"></div>
+        <div id="tanke_box"></div>
+        <div id="tiequan_box"></div>
+        <div id="lianfatiaoqingwa_box"></div>
+        <div id="tiemotuo_box"></div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/show_toy_box.js"></script>
+<script>
+    $(function () {
+        $('#dinzifeibiao_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/dinzifeibiao.png';
+            show_box(url);
+        });
+        $('#tiegongji_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tiegongji.png';
+            show_box(url);
+        });
+        $('#zixingche_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/zixingche.png';
+            show_box(url);
+        });
+        $('#tietuoluo_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tietuoluo.png';
+            show_box(url);
+        });
+        $('#jiulianhuan_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/jiulianhuan.png';
+            show_box(url);
+        });
+        $('#tiepao_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tiepao.png';
+            show_box(url);
+        });
+        $('#tanke_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tanke.png';
+            show_box(url);
+        });
+        $('#tiequan_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tiequan.png';
+            show_box(url);
+        });
+        $('#lianfatiaoqingwa_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/lianfatiaoqingwa.png';
+            show_box(url);
+        });
+        $('#tiemotuo_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tiemotuo.png';
+            show_box(url);
+        });
+    });
+</script>
+
+</html>

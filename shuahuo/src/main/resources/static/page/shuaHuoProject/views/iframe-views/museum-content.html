@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/structure.css">
+    <link rel="stylesheet" href="../../css/museum-content.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/stylesCode.css">
+    <title>museum-content</title>
+</head>
+
+<body>
+    <div class="main-content-box">
+        <div class="exhibition">
+            <div class="exhibition-title clearfloat">
+                <ul>
+                    <li> <span><img src="../../resources/icon/vr_glasses.png"></span></li>
+                    <li>
+                        <h2>虚拟展厅</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="exhibition-big-imgwapper image04">
+                <a target="_blank" id="goto_exhibition">
+                    <img id="toys_img_exhibition_one">
+                    <div class="ovrly" title="点击进入模型演示"></div>
+                </a>
+            </div>
+            <div class="exhibition-sm-imgwapper">
+                <ul>
+                    <li class="image04" style="width:167px;height:167;"><img id="toys_img_exhibition_two"><div class="ovrly"></div></li>
+                    <li class="image04" style="width:167px;height:167;"><img id="toys_img_exhibition_three"><div class="ovrly"></div></li>
+                    <li class="image04" style="width:167px;height:167;"><img id="toys_img_exhibition_four"><div class="ovrly"></div></li>
+                    <li class="r-margin-none image04" style="width:167px;height:167;"><img id="toys_img_exhibition_five"><div class="ovrly"></div></li>
+                </ul>
+            </div>
+        </div>
+        <div class="hr-b hr-location"></div>
+        <div class="literature">
+            <div class="literature-title">
+                <h2>文献展览</h2>
+            </div>
+            <div class="agoandnow clearfloat">
+                <div class="agoandnow-left-wapper image04"><img id="AgoAndNow_img"><div class="ovrly"></div></div>
+                <div class="agoandnow-right-wapper">
+                    <div class="agoandnow-right-title">
+                        <h3 id="AgoAndNow_title">前世今生</h3>
+                    </div>
+                    <hr class="hr-c">
+                    <div class="agoandnow-right-text">
+                        <p id="AgoAndNow_context">
+                            前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世......</p>
+                    </div>
+                    <a target="_blank" class="btn-a agoandnow-btn-location" id="AgoAndNow_btn">查看图文</a>
+                </div>
+            </div>
+
+            <div class="memory clearfloat">
+                <div class="memory-right-wapper image04"><img id="Memory_img"><div class="ovrly"></div></div>
+                <div class="memory-left-wapper">
+                    <div class="memory-left-title">
+                        <h3 id="Memory_title">文化记忆</h3>
+                    </div>
+                    <hr class="hr-c">
+                    <div class="memory-left-text">
+                        <p id="Memory_context">前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世今生前世......
+                        </p>
+                    </div>
+                    <a target="_blank" class="btn-a memory-btn-location" id="Memory_btn">查看图文</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script>
+    //1、location.search获取get请求的参数   获取到的数据，是以?开头的
+    var search = location.search;
+    //2、如果还想要获取确定的数据，可以解析字符串
+    function parse(search) {
+        //从第二个字符开始截取   ，获取到第二个开始后面所有的字符
+        var str = search.substring(1);
+        var result = {};
+        //分割字符串  -->产生字符串数组
+        var strs = str.split("&");
+        //遍历数组中的每一个元素
+        strs.forEach(function (v) {
+            //伪代码：v="age=18"
+            var keyvalue = v.split("=");
+            var name = keyvalue[0];
+            var value = keyvalue[1];
+            result[name] = value;
+        })
+        return result;
+    }
+    var r = parse(search);
+</script>
+<script>
+    //玩具id
+    var id = r.id;
+    console.log(id);
+    //获取虚拟展厅资源
+    var ToysExhibitionInfo = get_ToysExhibition(id);
+    //获取前世今生资源
+    var ToysAgoAndNowInfo = get_ToysAgoAndNow(id);
+    //获取文化记忆资源
+    var ToysMemoryInfo = get_ToysMemory(id);
+    //对前世今生资源进行优化
+    if (ToysAgoAndNowInfo != null && ToysAgoAndNowInfo != "") {
+        var ToysAgoAndNowInfo_context = ToysAgoAndNowInfo[0].toys_agoandnow_img_context;
+        if (ToysAgoAndNowInfo_context.length >= 65) {
+            ToysAgoAndNowInfo_context = ToysAgoAndNowInfo_context.substr(0, 64) + "...";
+        }
+    }
+    //对文化记忆资源进行优化
+    if (ToysMemoryInfo != null && ToysMemoryInfo != "") {
+        var ToysMemoryInfo_context = ToysMemoryInfo[0].toys_memory_img_context;
+        if (ToysMemoryInfo_context.length >= 65) {
+            ToysMemoryInfo_context = ToysMemoryInfo_context.substr(0, 64) + "...";
+        }
+    }
+    //将虚拟展厅资源填入网页
+    $('#toys_img_exhibition_one').attr('src', '../../resources/img/toys_exhibition_img/' + ToysExhibitionInfo[0].toys_img_exhibition_one + '');
+    $('#toys_img_exhibition_two').attr('src', '../../resources/img/toys_exhibition_img/' + ToysExhibitionInfo[0].toys_img_exhibition_two + '');
+    $('#toys_img_exhibition_three').attr('src', '../../resources/img/toys_exhibition_img/' + ToysExhibitionInfo[0].toys_img_exhibition_three + '');
+    $('#toys_img_exhibition_four').attr('src', '../../resources/img/toys_exhibition_img/' + ToysExhibitionInfo[0].toys_img_exhibition_four + '');
+    $('#toys_img_exhibition_five').attr('src', '../../resources/img/toys_exhibition_img/' + ToysExhibitionInfo[0].toys_img_exhibition_five + '');
+    $('#goto_exhibition').attr('href', ToysExhibitionInfo[0].toys_img_exhibition_url);
+
+    //将前世今生资源填入网页
+    $('#AgoAndNow_img').attr('src', '../../resources/img/toys_agoandnow/' + ToysAgoAndNowInfo[0].toys_agoandnow_img_one + '');
+    $('#AgoAndNow_context').text(ToysAgoAndNowInfo_context);
+    $('#AgoAndNow_btn').attr('href', '../museum-agoandnow.html?id=' + id);
+
+    //将文化记忆资源填入网页
+    $('#Memory_img').attr('src', '../../resources/img/toys_memory/' + ToysMemoryInfo[0].toys_memory_img_one + '');
+    $('#Memory_context').text(ToysMemoryInfo_context);
+    $('#Memory_btn').attr('href', '../museum-memory.html?id=' + id);
+    //ajax获取资源
+    //虚拟展厅
+    function get_ToysExhibition(id) {
+        var getData = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            //设置为true后return不了data
+            async: false,
+            url: '../../findToysExhibitionByToysId?toysid=' + id,
+            success: function (data) {
+                getData = data.data;
+            }
+        });
+        return getData;
+    }
+    //前世今生
+    function get_ToysAgoAndNow(id) {
+        var getData = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            //设置为true后return不了data
+            async: false,
+            url: '../../findToysAgoAndNowByToysId?toysid=' + id,
+            success: function (data) {
+                getData = data.data;
+            }
+        });
+        return getData;
+    }
+
+    function get_ToysMemory(id) {
+        var getData = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            //设置为true后return不了data
+            async: false,
+            url: '../../findToysMemoryByToysId?toysid=' + id,
+            success: function (data) {
+                getData = data.data;
+            }
+        });
+        return getData;
+    }
+</script>
+
+</html>

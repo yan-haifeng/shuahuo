@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/structure.css">
+    <link rel="stylesheet" href="../../css/structure-min.css">
+    <link rel="stylesheet" href="../../css/ft-carousel.css" />
+    <link rel="stylesheet" href="../../css/main-content-title.css">
+    <link rel="stylesheet" href="../../css/course-modelling-iframe.css">
+    <script src="../../js/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .main-content {
+            margin-top: 0px !important;
+            padding: 0px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="main-content-title clearfloat">
+            <ul id="content-tetle-ul">
+                <li class="l-margin-none">
+                    <p>功能：</p>
+                </li>
+                <li class="click-li" id="jieling_li">
+                    <div>节令生产</div>
+                </li>
+                <li id="jianzhu_li">
+                    <div>建筑</div>
+                </li>
+                <li id="shengyin_li">
+                    <div>声音</div>
+                </li>
+                <li id="yizhi_li">
+                    <div>益智</div>
+                </li>
+                <li id="jiansheng_li">
+                    <div>健身</div>
+                </li>
+                <li>
+                    <div>实用</div>
+                </li>
+            </ul>
+        </div>
+        <hr class="hr-a">
+        <!-- iframe -->
+        <iframe src="course-modelling-function-jieling.html" frameborder="0" scrolling="no" width="1080px"
+            height="3276px" style="position: relative; left: -40px;" id="function_iframe"></iframe>
+    </div>
+</body>
+<script src="../../js/click-content-tetle.js"></script>
+
+<script>
+    //点击li跳转iframe
+    $(function () {
+        $('#function_iframe').css('height', '3276px');
+        $('#modelling-iframe', parent.document).css('height', '3276px');
+        //竹编
+        $('#jieling_li').click(function () {
+            $('#function_iframe').attr('src', 'course-modelling-function-jieling.html');
+            $('#function_iframe').css('height', '3276px');
+            $('#modelling-iframe', parent.document).css('height', '3276px');
+        });
+        $('#jianzhu_li').click(function () {
+            $('#function_iframe').attr('src', 'course-modelling-function-jianzhu.html');
+            $('#function_iframe').css('height', '3600px');
+            $('#modelling-iframe', parent.document).css('height', '3600px');
+        });
+        $('#shengyin_li').click(function () {
+            $('#function_iframe').attr('src', 'course-modelling-function-shengyin.html');
+            $('#function_iframe').css('height', '1807px');
+            $('#modelling-iframe', parent.document).css('height', '1807px');
+        });
+        $('#yizhi_li').click(function () {
+            $('#function_iframe').attr('src', 'course-modelling-function-yizhi.html');
+            $('#function_iframe').css('height', '2109px');
+            $('#modelling-iframe', parent.document).css('height', '2109px');
+        });
+        $('#jiansheng_li').click(function () {
+            $('#function_iframe').attr('src', 'course-modelling-function-jiansheng.html');
+            $('#function_iframe').css('height', '1611px');
+            $('#modelling-iframe', parent.document).css('height', '1611px');
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/structure.css">
+    <link rel="stylesheet" href="../css/structure-min.css">
+    <link rel="stylesheet" href="../css/order-details.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <title>耍货</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="top-nav">
+                <div class="top-nav-center">
+                    <div class="top-nav-center-city">
+                        <ul>
+                            <li><span><img src="../resources/icon/position_1.png"></span></li>
+                            <!-- 后期后台 修改 -->
+                            <li>杭州</li>
+                            <li>
+                                <p>[切换城市]</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav-center-sign">
+                        <ul>
+                            <li><a href="login.html" class="login-btn">登录</a></li>
+                            <li><a class="enrol-btn">注册</a></li>
+                            <li class="r-margin-none"><a href="myorder.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-nav">
+                <div class="middle-nav-logo"><img src="../resources/icon/logo.gif"></div>
+                <div class="middle-nav-search">
+                    <div class="middle-nav-search-boder">
+                        <div class="middle-nav-search-input">
+                            <span><img src="../resources/icon/search_1.png"></span>
+                            <form action="#">
+                                <input type="text" placeholder="浙江最热门的手工艺品">
+                            </form>
+                        </div>
+                        <div class="middle-nav-search-btn">搜索</div>
+                    </div>
+                    <div class="middle-nav-search-recent">
+                        <ul>
+                            <li><a href="https://www.baidu.com/s?wd=最热手工品在线订购" target="_blank">最热手工品在线订购</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=浙江传统文献" target="_blank">浙江传统文献</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=扇子的制作流程" target="_blank">扇子的制作流程</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li id="h-page"><a href="../index.html" id="p-a">首页<i id="i-a"></i></a></li>
+                    <li id="museum"><a href="museum.html" id="p-b">展览博物馆<i id="i-b"></i></a></li>
+                    <li id="course"><a href="course-process.html" id="p-c">乡土课程<i id="i-c"></i></a>
+                        <ul class="course-drop-nav">
+                            <li><a href="course-process.html">制作流程</a></li>
+                            <li><a href="course-modelling.html">工艺造型</a></li>
+                            <li><a href="course-structure.html">结构原理</a></li>
+                        </ul>
+                    </li>
+                    <li id="community"><a href="community-forum.html" id="p-d">传承社区<i id="i-d"></i></a>
+                    </li>
+                    <li id="custom" class="r-margin-none"><a href="myorder.html" id="p-e">我的定制<i id="i-e"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- 此处书写主体内容 -->
+        <div class="main-wapper">
+            <div class="link-wapper clearfloat">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li>></li>
+                    <li><a href="myorder.html">我的定制</a></li>
+                    <li>></li>
+                    <li><a href="myorder.html">我的订单</a></li>
+                    <li>></li>
+                    <li><a href="order-details.html">订单详情</a></li>
+                </ul>
+            </div>
+            <div class="carousel-wapper">
+                <div class="layui-carousel" id="test1" lay-filter="test1">
+                    <div carousel-item="">
+                        <div><a href="javascript: void(0)"><img src="../resources/img/index_banner/banner6.png"></a></div>
+                        <div><a href="javascript: void(0)"><img src="../resources/img/index_banner/banner7.png"></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <!-- 此处书写主体内容  -->
+                <div class="main-content-title">
+                    <div class="title">订单详情</div>
+                </div>
+                <hr class="hr-a">
+                <div class="details_wapper">
+                    <div class="hr-b"></div>
+                    <!-- 未接单 -->
+                    <div class="statu_wapper not_accepted">
+                        <div class="statu_icon" id="not_accepted"></div>
+                        <p>未接单</p>
+                    </div>
+                    <!-- 已接单 -->
+                    <div class="statu_wapper accepted">
+                        <!-- 正在进行样式statu_icon_ing -->
+                        <div class="statu_icon" id="accepted"></div>
+                        <p>已接单</p>
+                    </div>
+                    <!-- 制作中 -->
+                    <div class="statu_wapper making">
+                        <div class="statu_icon" id="making"></div>
+                        <p>制作中</p>
+                    </div>
+                    <!-- 交付中 -->
+                    <div class="statu_wapper delivery">
+                        <div class="statu_icon" id="delivery"></div>
+                        <p>交付中</p>
+                    </div>
+                    <!-- 完成 -->
+                    <div class="statu_wapper finish">
+                        <div class="statu_icon" id="finish"></div>
+                        <p>完成</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroud-black-r"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_content_wapper clearfloat">
+            <div class="footer_nav_wapper clearfloat">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是工匠</a></li>
+                            <li class="li-column"><a href="#">成为工匠</a></li>
+                            <li class="li-column"><a href="#">创建工作室</a></li>
+                            <li class="li-column"><a href="#">工作室规范</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是用户</a></li>
+                            <li class="li-column"><a href="#">注册新用户</a></li>
+                            <li class="li-column"><a href="#">发布订单</a></li>
+                            <li class="li-column"><a href="#">我的定制</a></li>
+                            <li class="li-column"><a href="#">参与讨论</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">文化保护</a></li>
+                            <li class="li-column"><a href="#">文化产权保护</a></li>
+                            <li class="li-column"><a href="#">文创产品</a></li>
+                            <li class="li-column"><a href="#">活动发布</a></li>
+                            <li class="li-column"><a href="#">法律顾问</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">在线课堂</a></li>
+                            <li class="li-column"><a href="#">玩具制作</a></li>
+                            <li class="li-column"><a href="#">玩具文化</a></li>
+                            <li class="li-column"><a href="#">名人工匠</a></li>
+                            <li class="li-column"><a href="#">热点推荐</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">虚拟展厅</a></li>
+                            <li class="li-column"><a href="#">全景模型</a></li>
+                            <li class="li-column"><a href="#">小游戏</a></li>
+                        </ul>
+                    </li>
+                    <li class="r-margin-none">
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">联系我们</a></li>
+                            <li class="li-column"><a href="#">400-123-123</a></li>
+                            <li class="li-column"><a href="#">wanju@sina.com</a></li>
+                            <li class="li-column"><a href="#">客服留言</a></li>
+                            <li class="li-column"><a href="#">团队介绍</a></li>
+                            <li class="li-column"><a href="#">关于网站</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hr-e">
+            <p>© 版权所有 耍货网页制作团队 技术支持 耍货网页制作团队 </p>
+            <div class="numbers_wapper">
+                <p>网站总访问人数：</p>
+                <p class="visitors_number">9999</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="enrol-box mask">
+        <div class="enrol-box-wapper">
+            <div class="exitbtn clearfloat"><span><img src="../resources/icon/exit.png"></span></div>
+            <div class="enrol-title clearfloat">
+                <ul id="enrol-ul">
+                    <li class="click-li">
+                        <p id="enrol_for_phone">手机号注册</p>
+                    </li>
+                    <li>
+                        <p id="enrol_for_e-mail">邮箱注册</p>
+                    </li>
+                    <li class="r-margin-none">
+                        <p id="enrol_for_account">账号注册</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe src="../views/iframe-views/enrol-phone-form.html" frameborder="0" scrolling="no"
+                id="enrol_iframe"></iframe>
+        </div>
+    </div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/structure.js"></script>
+<script src="../js/tologin.js"></script>
+<script src="../js/enrol.js"></script>
+<script src="../layui/layui.all.js"></script>
+<script type="text/javascript">
+    layui.use('carousel', function () {
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            , width: '100%' //设置容器宽度
+            , height: '100%'
+            , interval: 5000
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
+<script src="../js/click-content-tetle.js"></script>
+<script>
+    //1、location.search获取get请求的参数   获取到的数据，是以?开头的
+    var search = location.search;
+    //2、如果还想要获取确定的数据，可以解析字符串
+    function parse(search) {
+        //从第二个字符开始截取   ，获取到第二个开始后面所有的字符
+        var str = search.substring(1);
+        var result = {};
+        //分割字符串  -->产生字符串数组
+        var strs = str.split("&");
+        //遍历数组中的每一个元素
+        strs.forEach(function (v) {
+            //伪代码：v="age=18"
+            var keyvalue = v.split("=");
+            var name = keyvalue[0];
+            var value = keyvalue[1];
+            result[name] = value;
+        })
+        return result;
+    }
+    var r = parse(search);
+</script>
+<script>
+    //根据id获取玩具
+    function get_toys(id) {
+        var getData = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            //设置为true后return不了data
+            async: false,
+            url: '../findOrderById?id=' + id,
+            success: function (data) {
+                getData = data.data;
+            }
+        });
+        return getData;
+    }
+    var id = r.id;
+    var toys = get_toys(id);
+    switch (toys[0].order_statu) {
+        case 0: $('#not_accepted').addClass('statu_icon_ing'); break;
+        case 1: $('#accepted').addClass('statu_icon_ing'); break;
+        case 2: $('#making').addClass('statu_icon_ing'); break;
+        case 3: $('#delivery').addClass('statu_icon_ing'); break;
+        case 4: $('#finish').addClass('statu_icon_ing'); break;
+    }
+</script>
+
+</html>

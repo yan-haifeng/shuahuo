@@ -1,0 +1,321 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+
+.no-border{
+    border: none !important;
+}
+
+.main-content{
+    min-height: 1000px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+/* 头像栏 */
+.head_box{
+    width: 100%;
+    height: 320px;
+    background-image: url(../resources/img/a6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.head_box .user_head_wapper{
+    width: 128px;
+    height: 164.5px;
+    margin: auto;
+    position: relative;
+    top: 65px;
+}
+
+.head_box .user_head_wapper .head_wapper{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.head_box .user_head_wapper .head_wapper img{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.head_box .user_head_wapper p{
+    width: 128px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+}
+
+/* 二级导航栏 */
+.my_double_nav_wapper{
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.my_double_nav_wapper ul li{
+    width: 360px;
+    height: 50px;
+}
+
+.my_double_nav_wapper .text_wapper{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my_double_nav_wapper p{
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #999999;
+}
+
+/* 主要内容 */
+.home_mainpage_wapper{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 左栏 */
+.home_mainpage_wapper .home_mainpage_wapper_l{
+    width: 350px;
+    float: left;
+}
+
+/* 成员信息 */
+.photo_album{
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.photo_album .photo_album_title{
+    width: 100%;
+    height: 52px;
+}
+
+.photo_album .photo_album_title p{
+    height: 52px;
+    line-height: 52px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+}
+
+.photo_album .photo_album_photo_wapper{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo_album .photo_album_photo_wapper .photo_album_photo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    margin-left: 35px;
+}
+
+.photo_album .photo_album_photo_wapper .photo_album_photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.photo_album .photo_album_photo_wapper .photo_album_photo p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.photo_album_see_more{
+    width: 100%;
+    height: 50px;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 右栏 */
+.home_mainpage_wapper .home_mainpage_wapper_r{
+    width: 710px;
+    float: right;
+}
+
+.studio_img_wapper{
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.studio_img_wapper img{
+    width: 100%;
+    height: 100%;
+}
+
+//订单样式
+.my_order_wapper{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+    padding-top: 0px;
+}
+
+.order_box{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.order_box .order{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.order_box .order .order_top_wapper{
+    height: 20px;
+}
+
+.order_box .order .order_top_wapper .l_order_top_wapper_p{
+    float: left;
+    margin-left: 20px;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.order_box .order .order_top_wapper .r_order_top_wapper_p{
+    float: right;
+    margin-right: 30px;
+    color: #f21c1c;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.order_box .order .order_mid_wapper{
+    width: 660px;
+    margin-top: 10px;
+    margin-left: 50px;
+}
+
+.order_box .order .order_mid_wapper .order_title{
+    color: #000;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+}
+
+.order_box .order .order_mid_wapper .order_price p,.order_box .order .order_mid_wapper .order_requirements p{
+    display: inline-block;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.order_box .order .order_mid_wapper .order_img_wapper{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.order_box .order .order_mid_wapper .order_img_wapper .order_img{
+    width: 140px;
+    height: 140px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.order_box .order .order_mid_wapper .order_img_wapper .order_img img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.order_box .order .order_mid_wapper .order_btn_wapper{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.order_box .order .order_mid_wapper .order_btn_wapper .order_btn_box{
+    float: right;
+    display: none;
+}
+
+.order_btn{
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: rgba(103, 51, 1, 0.6);
+    color: #fff;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.order_box .order .order_mid_wapper .order_statu_select_wapper{
+    float: right;
+    width: 200px;
+    margin-right: 30px;
+    display: none;
+}
+
+.order_statu_select_wapper .layui-form-select dl dd.layui-this{
+    background-color:rgba(103, 51, 1, 0.6);
+}
+
+.order_box .order .order_mid_wapper .finish_wapper{
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    display: none;
+}
+
+.order_box .order .order_mid_wapper .refuse_wapper{
+    float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    display: none;
+}
+
+.hidden_input{
+    display: none;
+}
+
+
+.backgroud-black-brown{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(103, 51, 1, 0.6);
+    top:390px;
+    z-index:-1;
+}

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.StudioMapper">
+
+    <!-- 得到所有的工作室信息 -->
+    <select id="findAllStudio" resultType="Studio">
+        select
+        *
+        from studio
+    </select>
+
+    <!-- 根据id查找某个工作室信息 -->
+    <select id="selectStudioById" resultType="Studio" parameterType="java.lang.Integer" >
+        select
+        *
+        from studio where studio_id = #{studio_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据uuid查找某个工作室信息 -->
+    <select id="selectStudioByUUID" resultType="Studio" parameterType="java.lang.String" >
+        select
+        *
+        from studio where studio_uuid = #{studio_uuid,jdbcType=VARCHAR}
+    </select>
+
+    <!-- 根据id删除某个工作室信息 -->
+    <delete id="deleteStudioByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from studio where studio_id = #{studio_id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条工作室信息 -->
+    <insert id="insertStudioSelective" parameterType="com.shuahuo.bean.Studio" >
+        insert into studio
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="studio_id != null" >
+                studio_id,
+            </if>
+            <if test="studio_name != null" >
+                studio_name,
+            </if>
+            <if test="studio_logo != null" >
+                studio_logo,
+            </if>
+            <if test="studio_img != null" >
+                studio_img,
+            </if>
+            <if test="studio_introduction != null" >
+                studio_introduction,
+            </if>
+            <if test="studio_begoodat != null" >
+                studio_begoodat,
+            </if>
+            <if test="studio_othertypes != null" >
+                studio_othertypes,
+            </if>
+            <if test="studio_uuid != null" >
+                studio_uuid,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="studio_id != null" >
+                #{studio_id,jdbcType=INTEGER},
+            </if>
+            <if test="studio_name != null" >
+                #{studio_name,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_logo != null" >
+                #{studio_logo,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_img != null" >
+                #{studio_img,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_introduction != null" >
+                #{studio_introduction,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_begoodat != null" >
+                #{studio_begoodat,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_othertypes != null" >
+                #{studio_othertypes,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_uuid != null" >
+                #{studio_uuid,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条工作室信息 -->
+    <update id="updateStudioByPrimaryKeySelective" parameterType="com.shuahuo.bean.Studio" >
+        update studio
+        <set >
+            <if test="studio_name != null" >
+                studio_name = #{studio_name,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_logo != null" >
+                studio_logo = #{studio_logo,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_img != null" >
+                studio_img = #{studio_img,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_introduction != null" >
+                studio_introduction = #{studio_introduction,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_begoodat != null" >
+                studio_begoodat = #{studio_begoodat,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_othertypes != null" >
+                studio_othertypes = #{studio_othertypes,jdbcType=VARCHAR},
+            </if>
+            <if test="studio_uuid != null" >
+                studio_uuid = #{studio_uuid,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where studio_id = #{studio_id,jdbcType=INTEGER}
+    </update>
+</mapper>

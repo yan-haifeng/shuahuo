@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>耍货</title>
+</head>
+
+<body>
+    请稍等
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script>
+    function islogin() {
+        var Data = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            async: false,
+            url: '../../islogin',
+            success: function (data) {
+                Data = data.data;
+            }
+        });
+        return Data;
+    }
+    var islogin = islogin();
+    var userInformation = "";
+    if (islogin != "") {
+        var user = get_userById(islogin[0].id);
+        userInformation = user;
+    }
+
+    if (userInformation.code == -1 || userInformation.data == null) {
+        //转发到登录页
+        window.location.href = '../login.html';
+    }
+    if (userInformation.data != null) {
+        console.log(userInformation.data[0].studio_id);
+        if (userInformation.data[0].studio_id == 0) {
+            //转发到我的页面
+            window.location.href = '../become_craftsman.html';
+        } else {
+            alert("你已经开通工作室了哦");
+            window.location.href = '../community-forum.html';
+        }
+    }
+
+    //获取用户信息
+    function get_userById(id) {
+        var getData = "";
+        $.ajax({
+            type: 'GET',
+            dataType: 'json',
+            //设置为true后return不了data
+            async: false,
+            url: '../../findUserById?id=' + id,
+            success: function (data) {
+                getData = data;
+            }
+        });
+        return getData;
+    }
+</script>
+
+</html>

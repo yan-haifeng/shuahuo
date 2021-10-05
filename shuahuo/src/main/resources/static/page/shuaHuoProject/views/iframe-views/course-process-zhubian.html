@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/zhubian.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main-div {
+            position: relative;
+            width: 1080px;
+            height: 3344px;
+            background-image: url(../../resources/img/process_img/zhubian.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .main-div video {
+            position: absolute;
+            top: 1030px;
+            left: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <video src="../../resources/video/process_video/zhubian.mp4" width="820px" height="580px" controls="controls">
+            Your browser does not support the video tag.
+        </video>
+        <div id="zhubiancaoxia_box"></div>
+        <div id="cujvqiu_box"></div>
+        <div id="zhudaxiang_box"></div>
+        <div id="guoguolong_box"></div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/show_toy_box.js"></script>
+<script>
+    $(function () {
+        $('#zhubiancaoxia_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/zhubiancaoxia.png';
+            show_boxs(url);
+        });
+        $('#cujvqiu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/cujvqiu.png';
+            show_boxs(url);
+        });
+        $('#zhudaxiang_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/zhudaxiang.png';
+            show_boxs(url);
+        });
+        $('#guoguolong_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/guoguolong.png';
+            show_boxs(url);
+        });
+    });
+</script>
+</html>

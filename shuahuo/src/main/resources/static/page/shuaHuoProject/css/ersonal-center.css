@@ -1,0 +1,478 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+
+.hr-f{
+    margin: 0px;
+    border-top-width: 0.9px;
+}
+
+.no-border{
+    border: none !important;
+}
+
+.main-content{
+    min-height: 1000px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+/* 头像栏 */
+.head_box{
+    width: 100%;
+    height: 320px;
+    background-image: url(../resources/img/a6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.head_box .user_head_wapper{
+    width: 128px;
+    height: 164.5px;
+    margin: auto;
+    position: relative;
+    top: 65px;
+}
+
+.head_box .user_head_wapper .head_wapper{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.head_box .user_head_wapper .head_wapper img{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+}
+
+.head_box .user_head_wapper p{
+    width: 128px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+}
+
+.change_head_btn{
+    width: 128px;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* 二级导航栏 */
+.my_double_nav_wapper{
+    width: 100%;
+    height: 60px;
+    background-color: #efeadd;
+}
+
+.my_double_nav_wapper ul{
+    position: relative;
+    width: 600px;
+    height: 100%;
+    margin: auto;
+}
+
+.my_double_nav_wapper ul li{
+    width: 116px;
+    height: 60px;
+}
+
+.my_double_nav_wapper ul .nav_myhomepage{
+    position: absolute;
+    left: 0px;
+}
+
+.my_double_nav_wapper ul .nav_personalcenter{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.my_double_nav_wapper ul .nav_accountmanagement{
+    position: absolute;
+    right: 0px;
+}
+
+.my_double_nav_wapper ul li a{
+    display: block;
+    width: 116px;
+    height: 60px;
+    color: #000;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.my_double_nav_wapper ul .click-li a{
+    color: #fff;
+    background-color: rgba(103, 51, 1, 0.6);
+}
+
+.my_double_nav_wapper ul li:hover a{
+    color: #fff;
+    background-color: rgba(103, 51, 1, 0.6);
+}
+
+/* 主要内容 */
+.home_mainpage_wapper{
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 左栏 */
+.home_mainpage_wapper .home_mainpage_wapper_l{
+    width: 410px;
+    float: left;
+}
+
+/* 关注 */
+.attention_wapper{
+    width: 100%;
+    height: 76px;
+    background-color: #fff;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.attention_wapper ul{
+    height: 100%;
+}
+
+.attention_wapper li{
+    height: 100%;
+    width: 136px;
+    border-right: 1px #cccccc solid;
+}
+
+.attention_wapper li p{
+    font-family: PingFangSC-Regular;
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    line-height: 22px;
+}
+
+.attention_wapper li .attention_wapper_num{
+    color: #333333;
+    font-size: 20px;
+    font-family: PingFangSC-bold;
+}
+
+.attention_wapper li .attention_wapper_title{
+    color: #808080;
+    font-size: 14px;
+}
+
+/* 我的定制 */
+.my_customization{
+    width: 100%;
+    min-height: 302px;
+    margin-top: 20px;
+    background-color: #ffffff;
+    border-radius: 2px;
+}
+
+.my_customization .customization_title{
+    width: 100%;
+    height: 52px;
+}
+
+.my_customization .customization_title p{
+    height: 52px;
+    line-height: 52px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+}
+
+.customization_content{
+    width: 100%;
+    min-height: 200px;
+}
+
+.customization{
+    position: relative;
+    width: 100%;
+    height: 194px;
+    box-sizing: border-box; 
+    padding: 20px;
+}
+
+.customization .customization_l{
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+.customization .customization_r{
+    width: 201px;
+    height: 115px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    float: right;
+}
+
+.customization .customization_r p{
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    margin-bottom: 5px;
+}
+
+.customization .customization_r .customization_now_statu{
+    width: 100%;
+    height: 37px;
+    margin-top: 5px;
+    border-radius: 2px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 16px;
+    font-family: PingFangSC-Regular;
+}
+
+.customization .customization_r .customization_doing{
+    color: #fff;
+    background-color: rgba(250, 2, 1, 0.6);
+}
+
+.customization .customization_r .customization_missdo{
+    color: #000;
+    background-color: #e6e6e6;
+}
+
+.customization .customization_r .customization_finish{
+    color: #000;
+    background-color: #e6e6e6;
+}
+
+.no_customization{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+    color: #000;
+    text-align: center;
+    line-height: 200px;
+    display: none;
+}
+
+.customization .hr-f{
+    border-right: 0px;
+    border-left: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.customization .customization_l img{
+    width: 150px;
+    height: 150px;
+}
+
+.customization_see_more{
+    width: 100%;
+    height: 50px;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 右栏 */
+.home_mainpage_wapper .home_mainpage_wapper_r{
+    width: 650px;
+    float: right;
+}
+
+/* 用户信息 */
+.user_information{
+    width: 100%;
+    height: 1140px;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.basic_information_title{
+    width: 100%;
+    height: 52px;
+}
+
+.basic_information_title p{
+    height: 52px;
+    line-height: 52px;
+    margin-left: 10px;
+    color: #000;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+}
+
+.basic_information{
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.information_box{
+    position: relative;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.information_box p{
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    display: inline-block;
+    color: #000;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+    margin-right: 20px;
+    top: 0;
+    line-height: 36px;
+}
+
+.information_box .information_input_box{
+    position: absolute;
+    left: 80px;
+    width: 300px;
+    height: 34px;
+    border: #cccccc 0.75px solid;
+    display: inline-block;
+}
+
+.information_box .information_input_box input{
+    width: 280px;
+    height: 24px;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: none;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.information_box .location_information_input{
+    position: absolute;
+    left: 80px;
+    width: 300px;
+    height: 38px;
+    display: inline-block;
+}
+
+.information_box .location_information_input .location_input_wapper{
+    width: 93.3px;
+}
+
+.information_box input{
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.information_box dd{
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.layui-form-select dl dd.layui-this{
+    background-color:rgba(103, 51, 1, 0.6);
+}
+
+.information_box .check_btn_box{
+    position: absolute;
+    left: 80px;
+    height: 34px;
+    display: inline-block;
+}
+
+.information_box .check_btn_box ul{
+    height: 100%;
+}
+
+.information_box .check_btn_box li{
+    width: 90px;
+    height: 100%;
+    color: #000;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+    margin-right: 10px;
+    border-radius: 2px;
+    background-color: #e6e6e6;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.information_box .check_btn_box .click-li{
+    background-color: rgba(103, 51, 1, 0.6);
+    color: #fff;
+}
+
+.contact_information{
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.occupation_information{
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.occupation_information p{
+    width: 145px;
+}
+
+.occupation_information .check_btn_box{
+    left: 170px;
+}
+
+.label_information{
+    margin-top: 35px;
+    margin-left: 50px;
+}
+
+.user_information_submit_btn{
+    width: 200px;
+    height: 34px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 2px;
+    background-color: rgba(103, 51, 1, 0.6);
+    color: #fff;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+    line-height: 34px;
+    cursor: pointer;
+}
+
+.hidden_input{
+    display: none;
+}
+
+.backgroud-black-brown{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(103, 51, 1, 0.6);
+    top:390px;
+    z-index:-1;
+}

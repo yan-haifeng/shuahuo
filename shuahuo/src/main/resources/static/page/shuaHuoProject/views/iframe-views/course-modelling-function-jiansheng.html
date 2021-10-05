@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/jiansheng.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main-div {
+            position: relative;
+            width: 1080px;
+            height: 1611px;
+            background-image: url(../../resources/img/modelling_function_img/jiansheng.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div id="jianzi_box"></div>
+        <div id="youyouqiu_box"></div>
+        <div id="tuoluo_box"></div>
+        <div id="kongzhu_box"></div>
+        <div id="jiqiaoqiu_box"></div>
+        <div id="muzuqiu_box"></div>
+        <div id="bolidanzhu_box"></div>
+        <div id="shabao_box"></div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/show_toy_box.js"></script>
+<script>
+    $(function () {
+        $('#jianzi_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/jianzi.png';
+            show_box(url);
+        });
+        $('#youyouqiu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/youyouqiu.png';
+            show_box(url);
+        });
+        $('#tuoluo_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/tuoluo.png';
+            show_box(url);
+        });
+        $('#kongzhu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/kongzhu2.png';
+            show_box(url);
+        });
+        $('#jiqiaoqiu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/jiqiaoqiu.png';
+            show_box(url);
+        });
+        $('#muzuqiu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/muzuqiu.png';
+            show_box(url);
+        });
+        $('#bolidanzhu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/bolidanzhu.png';
+            show_box(url);
+        });
+        $('#bolidanzhu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/bolidanzhu.png';
+            show_box(url);
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,683 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 1080px;
+}
+
+@font-face{
+    font-family: 'PingFangSC-Regular'; 
+    src: url('../resources/font/苹方黑体-准-简.ttf');
+}
+
+@font-face{
+    font-family: 'PingFangSC-Light'; 
+    src: url('../resources/font/苹方黑体-细-简.ttf');
+}
+
+@font-face{
+    font-family: 'PingFangSC-Medium'; 
+    src: url('../resources/font/苹方黑体-中黑-简.ttf');
+}
+
+@font-face{
+    font-family: 'PingFangSC-bold'; 
+    src: url('../resources/font/苹方黑体-中粗-简.ttf');
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    float: left;
+    list-style: none;
+}
+
+.nav{
+    background-color: #ebe6d9;
+}
+
+.header{
+    width: 100%;
+    height: 180px;
+}
+
+/* 清除左右外边距 */
+.r-margin-none{
+    margin-right: 0 !important;
+}
+
+.l-margin-none{
+    margin-left: 0 !important;
+}
+
+/* 清除浮动影响 */
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:"";
+    visibility:hidden;
+    height:0}
+.clearfloat{zoom:1}
+
+/* 禁用样式 */
+input:disabled{
+    background-color: #e6e6e6 !important;
+    cursor:not-allowed !important;
+    color: #999999 !important;
+}
+
+.disabled{
+    background-color: #e6e6e6 !important;
+    cursor:not-allowed !important;
+}
+
+/* 水平线样式 */
+.hr-a{
+    border-top: 0.75px solid #b3b3b3;  
+    height: 0px; 
+ }
+
+.hr-b{
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(to right, #999999 0%, #999999 50%, transparent 50%);
+    background-size: 15px 1px;
+    background-repeat: repeat-x;
+}
+
+.hr-c{
+    border-top: 1px solid #999999;   
+    height: 0px;
+    margin: 0px;
+ }
+
+ .hr-d{
+    border-top: 0.75px solid #e6e6e6;   
+    height: 0px;
+ }
+
+ .hr-e{
+    border: 0.25px solid #7F7F7F;   
+ }
+
+ .hr-f{
+    border-top: 0.75px solid #cccccc;  
+    height: 0px;
+ }
+
+ /* 按钮样式 */
+ .btn-a{
+     display: block;
+     width: 88px;
+     height: 26px;
+     border-radius: 8px;
+     background-color: #7babf0;
+     color: white;
+     font-family: PingFangSC-Regular;
+     font-size: 16px;
+     line-height: 26px;
+     text-align: center;
+     cursor: pointer;
+ }
+
+ .btn-b{
+    display: block;
+    width: 88px;
+    height: 26px;
+    border-radius: 2px;
+    background-color: rgba(250, 2, 1, 0.6);
+    color: white;
+    font-family: PingFangSC-Regular;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 有左右边框 */
+
+.haveborder{
+    border-left: 0.75px solid #b3b3b3;
+    border-right: 0.75px solid #b3b3b3;
+}
+
+/* 隐藏input */
+.hidden_input{
+    display: none;
+}
+
+/* 顶部导航栏 (登录 位置)*/
+.top-nav{
+    width: 100%;
+    height: 36px;
+    margin-bottom: 4px;
+    background-color: black;
+}
+
+.top-nav-center{
+    width: 1080px;
+    height: 36px;
+    margin: auto;
+}
+
+.top-nav-center-city{
+    float: left;
+    height: 36px;
+}
+
+.top-nav-center-city ul{  
+    height: 21px;  
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 需修改 */
+.top-nav-center-city ul li{
+    margin-right: 5px;
+    font-family: PingFangSC-Light;
+    color: white;
+    font-size: 16px;
+}
+
+.top-nav-center-city ul li p{
+    cursor: pointer;
+}
+
+.top-nav-center-city ul li span{
+    margin-right: 10px;
+}
+
+.top-nav-center-sign{
+    float: right;
+    height: 36px;
+}
+
+.top-nav-center-sign ul{
+    height: 21px;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+}
+
+/* 需修改 */
+.top-nav-center-sign ul li{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.top-nav-center-sign ul li a{
+    font-family: PingFangSC-Light;
+    color: white;
+    font-size: 16px;
+}
+
+/* 中部导航栏 (logo 搜索框)*/
+.middle-nav{
+    width: 1080px;
+    height: 80px;
+    margin: auto;
+}
+
+.middle-nav-logo{
+    display: inline-block;
+    width: 73px;
+    height: 53px;
+    position: relative;
+    top: 26px;
+    left: 0px;
+}
+
+.middle-nav-logo img{
+    width: 140px;
+    height: 100px;
+}
+
+.middle-nav-search{
+    position: relative;
+    width: 532px;
+    height: 56px;
+    float: right;
+    top: 23px;
+}
+
+.middle-nav-search-boder{
+    position: relative;
+    width: 532px;
+    height: 38px;
+    border: 1px #998675 solid;
+    border-radius: 38px;
+}
+
+.middle-nav-search-input{
+    width: 442px;
+    height: 38px;
+    float: left;
+}
+
+.middle-nav-search-input span{
+    display: inline-block;
+    width: 42px;
+    height: 38px;
+    text-align: center;
+    float: left;
+}
+
+.middle-nav-search-input span img{
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    margin-top: 11.5px;
+}
+
+.middle-nav-search-input form{
+    display: inline-block;
+    width: 400px;
+    height: 36px;
+    margin-top: 1px;
+}
+
+.middle-nav-search-input form input{
+    position: absolute;
+    width: 400px;
+    height: 36px;
+    background-color: #efeadd;
+    border: none;
+    outline:none;
+    font-family: PingFangSC-Regular;
+    color: #808080;
+    font-size: 16px;
+    top: 0px;
+}
+
+.middle-nav-search-btn{
+    position: absolute;
+    display: inline-block;
+    width: 90px;
+    height: 38px;
+    background-color: #c7b299;
+    text-align: center;
+    line-height: 38px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+    right: 0px;
+    top: 0px;
+}
+
+.middle-nav-search-recent{
+    width: 532px;
+    height: 14px;
+}
+
+.middle-nav-search-recent ul{
+    margin-left: 15px;
+}
+
+.middle-nav-search-recent ul li{
+    margin-right: 10px;
+}
+
+.middle-nav-search-recent ul li a{
+    font-family: PingFangSC-Light;
+    font-size: 12px;
+    color: #808080;
+}
+
+/* 下导航栏 (导航栏) */
+.bottom-nav{
+    height: 35px;
+    margin-top: 27px;
+}
+
+.bottom-nav ul{
+    width: 625px;
+    height: 28px;
+    margin: auto;
+}
+
+.bottom-nav ul li{
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.bottom-nav ul #course{
+    width: 100px;
+    margin-right: 42px;
+}
+
+.bottom-nav ul #community{
+    width: 100px;
+    margin-right: 42px;
+}
+
+.bottom-nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: PingFangSC-bold;
+    font-size: 18px;
+    color: black;
+    text-decoration: none !important;
+}
+
+.bottom-nav ul li a i{
+    position: relative;
+    right: 2px;
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    visibility:hidden;
+}
+
+/* 鼠标经过变色 */
+
+.bottom-nav ul #h-page:hover #p-a{
+    color: #e1b18b;
+}
+
+.bottom-nav ul #h-page:hover #i-a{
+    background-color: #e1b18b;
+    visibility: visible;
+}
+
+.bottom-nav ul #museum:hover #p-b{
+    color: #7babf0;
+}
+
+.bottom-nav ul #museum:hover #i-b{
+    background-color: #7babf0;
+    visibility: visible;
+}
+
+.bottom-nav ul #course:hover #p-c{
+    color: rgba(104, 155, 51, 0.6);
+}
+
+.bottom-nav ul #course:hover #i-c{
+    background-color:rgba(104, 155, 51, 0.6);
+    visibility: visible;
+}
+
+.bottom-nav ul #community:hover #p-d{
+    color: rgba(103, 51, 1, 0.6);
+}
+
+.bottom-nav ul #community:hover #i-d{
+    background-color: rgba(103, 51, 1, 0.6);
+    visibility: visible;
+}
+
+.bottom-nav ul #custom:hover #p-e{
+    color: rgba(250, 2, 1, 0.6);
+}
+
+.bottom-nav ul #custom:hover #i-e{
+    background-color: rgba(250, 2, 1, 0.6);
+    visibility: visible;
+}
+
+/* 下拉栏 */
+/* 乡土课程下拉栏 */
+.course-drop-nav{
+    position: absolute;
+    z-index: 999;
+}
+
+.course-drop-nav li{
+    float: none;
+}
+
+#course ul{
+    width: 100px;
+    height: 122px;
+    background-color: #efeadd;
+    margin-right: 20px;
+    display: none;
+}
+
+#course:hover ul{
+    display: block;
+}
+
+#course ul li{
+    width: 100px;
+    height: 24px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+#course ul li a{
+    display: block;
+    color: #999999;
+    width: 100px;
+    height: 24px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* 下拉栏经过变色 */
+#course ul li:hover{
+    background-color:rgba(104, 155, 51, 0.6);
+}
+
+#course ul li:hover a{
+    color: #3e5d1f;
+}
+
+/* 传承社区下拉栏 */
+.community-drop-nav{
+    position: absolute;
+    z-index: 999;
+}
+
+.community-drop-nav li{
+    float: none;
+}
+
+#community ul{
+    width: 100px;
+    height: 89px;
+    background-color: #efeadd;
+    margin-right: 20px;
+    display: none;
+}
+
+#community:hover ul{
+    display: block;
+}
+
+#community ul li{
+    width: 100px;
+    height: 24px;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+#community ul li a{
+    display: block;
+    color: #999999;
+    width: 100px;
+    height: 24px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 24px;
+}
+
+/* 下拉栏经过变色 */
+#community ul li:hover{
+    background-color: rgba(103, 51, 1, 0.6);
+}
+
+#community ul li:hover a{
+    color: #000000;
+}
+
+/* 注册样式 */
+.enrol-box{
+    top: 0px;
+}
+
+.mask{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    display: none;
+}
+
+.enrol-box-wapper{
+    width: 384px;
+    height: 456px;
+    background-color: white;
+    margin: auto;
+    margin-top: 115px;
+    padding: 15px 40px;
+    box-sizing: border-box;
+}
+
+.exitbtn{
+    position: relative;
+    left: 25px;
+    
+}
+
+.exitbtn span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    float: right;
+    cursor: pointer;
+}
+
+.exitbtn span img{
+    width: 25px;
+    height: 25px;
+}
+
+.enrol-title li{
+    height: 33px;
+    margin-right: 15px;
+}
+
+.enrol-title li p,.enrol-title li a{
+    line-height: 54px;
+    display:block;
+    width: 100%;
+    height:100%;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #808080;
+    cursor: pointer;
+}
+
+.enrol-title .click-li{
+    margin-right: 50px;
+}
+
+.enrol-title .click-li p{
+    line-height: 2;
+    font-family: PingFangSC-bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+.enrol-box-wapper iframe{
+    width: 300px;
+    height: 300px;
+    margin-top: 40px;
+}
+
+/*  */
+
+.main{
+    height: auto;
+}
+
+/* 底部样式 */
+.footer{
+    height: 300px;
+    background-color: #333333;
+    margin-top: 60px;
+
+}
+
+.footer_content_wapper{
+    width: 1080px;
+    height: 300px;
+    margin: auto;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.footer_nav_wapper{
+    width: 840px;
+    height: 141px;
+    margin: auto;
+}
+
+.footer_nav_wapper ul li{
+    margin-right: 70px;
+}
+
+.footer_nav_wapper .li-column{
+    float: none;
+    margin: 0px;
+    margin-bottom: 1px;
+}
+
+.footer_nav_wapper .li-column a{
+    color: #fff;
+    font-size: 14px;
+    font-family: PingFangSC-Regular;
+}
+
+.footer_nav_wapper .li-column .footer_nav_title{
+    color: #fe9834;
+    font-size: 18px;
+    font-family: PingFangSC-Regular;
+}
+
+.footer .hr-e{
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.footer p{
+    color: #cccccc;
+    font-size: 12px;
+    font-family: PingFangSC-Regular;
+    text-align: center;
+}
+
+.numbers_wapper{
+    text-align: center;
+}
+
+.numbers_wapper p{
+    display: inline-block;
+}
+
+.numbers_wapper .visitors_number{
+    color: #fe9834;
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+

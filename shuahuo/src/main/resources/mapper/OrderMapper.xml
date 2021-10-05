@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.OrderMapper">
+
+    <!-- 得到所有的订单信息 -->
+    <select id="findAllOrder" resultType="Order">
+        select
+        *
+        from orders
+    </select>
+
+    <!-- 根据id查找某个订单信息 -->
+    <select id="selectOrderById" resultType="Order" parameterType="java.lang.Integer" >
+        select
+        *
+        from orders where order_id = #{order_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据userId查找某个订单信息 -->
+    <select id="selectOrderByUserId" resultType="Order" parameterType="java.lang.Integer" >
+        select
+        *
+        from orders where user_id = #{user_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据StudioId查找某个订单信息 -->
+    <select id="selectOrderByStudioId" resultType="Order" parameterType="java.lang.Integer" >
+        select
+        *
+        from orders where studio_id = #{studio_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据id删除某个订单信息 -->
+    <delete id="deleteOrderByPrimaryKey" parameterType="java.lang.Integer" >
+        delete from orders where order_id = #{order_id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条订单信息 -->
+    <insert id="insertOrderSelective" parameterType="com.shuahuo.bean.Order" >
+        insert into orders
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="order_id != null" >
+                order_id,
+            </if>
+            <if test="user_id != null" >
+                user_id,
+            </if>
+            <if test="toys_id != null" >
+                toys_id,
+            </if>
+            <if test="studio_id != null" >
+                studio_id,
+            </if>
+            <if test="order_requirements != null" >
+                order_requirements,
+            </if>
+            <if test="order_price != null" >
+                order_price,
+            </if>
+            <if test="order_transaction_mode != null" >
+                order_transaction_mode,
+            </if>
+            <if test="order_statu != null" >
+                order_statu,
+            </if>
+            <if test="order_img != null" >
+                order_img,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="order_id != null" >
+                #{order_id,jdbcType=INTEGER},
+            </if>
+            <if test="user_id != null" >
+                #{user_id,jdbcType=INTEGER},
+            </if>
+            <if test="toys_id != null" >
+                #{toys_id,jdbcType=INTEGER},
+            </if>
+            <if test="studio_id != null" >
+                #{studio_id,jdbcType=INTEGER},
+            </if>
+            <if test="order_requirements != null" >
+                #{order_requirements,jdbcType=VARCHAR},
+            </if>
+            <if test="order_price != null" >
+                #{order_price,jdbcType=VARCHAR},
+            </if>
+            <if test="order_transaction_mode != null" >
+                #{order_transaction_mode,jdbcType=VARCHAR},
+            </if>
+            <if test="order_statu != null" >
+                #{order_statu,jdbcType=INTEGER},
+            </if>
+            <if test="order_img != null" >
+                #{order_img,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条订单信息 -->
+    <update id="updateOrderByPrimaryKeySelective" parameterType="com.shuahuo.bean.Order" >
+        update orders
+        <set >
+            <if test="user_id != null" >
+                user_id = #{user_id,jdbcType=INTEGER},
+            </if>
+            <if test="toys_id != null" >
+                toys_id = #{toys_id,jdbcType=INTEGER},
+            </if>
+            <if test="studio_id != null" >
+                studio_id = #{studio_id,jdbcType=INTEGER},
+            </if>
+            <if test="order_requirements != null" >
+                order_requirements = #{order_requirements,jdbcType=VARCHAR},
+            </if>
+            <if test="order_price != null" >
+                order_price = #{order_price,jdbcType=VARCHAR},
+            </if>
+            <if test="order_transaction_mode != null" >
+                order_transaction_mode = #{order_transaction_mode,jdbcType=VARCHAR},
+            </if>
+            <if test="order_statu != null" >
+                order_statu = #{order_statu,jdbcType=INTEGER},
+            </if>
+            <if test="order_img != null" >
+                order_img = #{order_img,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where order_id = #{order_id,jdbcType=INTEGER}
+    </update>
+</mapper>

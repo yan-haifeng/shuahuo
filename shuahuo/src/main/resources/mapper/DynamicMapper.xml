@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shuahuo.dao.DynamicMapper">
+
+    <!-- 得到所有的微博动态信息 -->
+    <select id="findAllDynamic" resultType="Dynamic">
+        select
+        *
+        from dynamic
+    </select>
+
+    <!-- 得到所有的微博动态信息根据id降序 -->
+    <select id="findAllDynamicDesc" resultType="Dynamic">
+        select
+        *
+        from dynamic order by dynamic_id desc;
+    </select>
+
+    <!-- 根据动态id查找某个动态信息 -->
+    <select id="selectDynamicByPrimaryKey" resultType="Dynamic" parameterType="java.lang.Integer">
+        select
+        *
+        from dynamic where dynamic_id = #{dynamic_id,jdbcType=INTEGER}
+    </select>
+
+    <!-- 根据用户名查找某个动态信息 -->
+    <select id="selectDynamicByUserId" resultType="Dynamic" parameterType="java.lang.Integer">
+        select
+        *
+        from dynamic where u_id = #{u_id,jdbcType=INTEGER} order by dynamic_id desc
+    </select>
+
+    <!-- 根据id删除某个动态信息 -->
+    <delete id="deleteDynamicByPrimaryKey" parameterType="java.lang.Integer">
+        delete from dynamic where dynamic_id = #{dynamic_id,jdbcType=INTEGER}
+    </delete>
+
+    <!-- 插入一条动态信息 -->
+    <insert id="insertDynamicSelective" parameterType="com.shuahuo.bean.Dynamic">
+        insert into dynamic
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="dynamic_id != null">
+                dynamic_id,
+            </if>
+            <if test="u_id != null">
+                u_id,
+            </if>
+            <if test="dynamic_text != null">
+                dynamic_text,
+            </if>
+            <if test="dynamic_imgnum != null">
+                dynamic_imgnum,
+            </if>
+            <if test="dynamic_imgname != null">
+                dynamic_imgname,
+            </if>
+            <if test="dynamic_videonum != null">
+                dynamic_videonum,
+            </if>
+            <if test="dynamic_videoname != null">
+                dynamic_videoname,
+            </if>
+            <if test="dynamic_creation_time != null">
+                dynamic_creation_time,
+            </if>
+            <if test="dynamic_dianzan_num != null">
+                dynamic_dianzan_num,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="dynamic_id != null">
+                #{dynamic_id,jdbcType=INTEGER},
+            </if>
+            <if test="u_id != null">
+                #{u_id,jdbcType=INTEGER},
+            </if>
+            <if test="dynamic_text != null">
+                #{dynamic_text,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_imgnum != null">
+                #{dynamic_imgnum,jdbcType=INTEGER},
+            </if>
+            <if test="dynamic_imgname != null">
+                #{dynamic_imgname,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_videonum != null">
+                #{dynamic_videonum,jdbcType=INTEGER},
+            </if>
+            <if test="dynamic_videoname != null">
+                #{dynamic_videoname,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_creation_time != null">
+                #{dynamic_creation_time,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_dianzan_num != null">
+                #{dynamic_dianzan_num,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+
+    <!-- 根据id更新一条用户信息 -->
+    <update id="updateByPrimaryKeySelective" parameterType="com.shuahuo.bean.Dynamic">
+        update dynamic
+        <set>
+            <if test="u_id != null">
+               u_id = #{u_id,jdbcType=INTEGER},
+            </if>
+            <if test="dynamic_text != null">
+                dynamic_text = #{dynamic_text,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_imgnum != null">
+                dynamic_imgnum = #{dynamic_imgnum,jdbcType=INTEGER},
+            </if>
+            <if test="dynamic_imgname != null">
+                dynamic_imgname = #{dynamic_imgname,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_videonum != null">
+                dynamic_videonum = #{dynamic_videonum,jdbcType=INTEGER},
+            </if>
+            <if test="dynamic_videoname != null">
+                dynamic_videoname = #{dynamic_videoname,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_creation_time != null">
+                dynamic_creation_time = #{dynamic_creation_time,jdbcType=VARCHAR},
+            </if>
+            <if test="dynamic_dianzan_num != null">
+                dynamic_dianzan_num = #{dynamic_dianzan_num,jdbcType=INTEGER},
+            </if>
+        </set>
+        where dynamic_id = #{dynamic_id,jdbcType=INTEGER}
+    </update>
+</mapper>

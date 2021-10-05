@@ -1,0 +1,84 @@
+#duanmugui_box{
+    position: absolute;
+    top: 653px;
+    left: 40px;
+    width: 236px;
+    height: 234px;
+}
+
+#duanmugui_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#hulu_box{
+    position: absolute;
+    top: 653px;
+    left: 295px;
+    width: 236px;
+    height: 234px;
+}
+
+#hulu_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hezou_box{
+    position: absolute;
+    top: 908px;
+    left: 40px;
+    width: 490px;
+    height: 234px;
+}
+
+#hezou_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#caihuimudiaoyazi_box{
+    position: absolute;
+    top: 653px;
+    left: 551px;
+    width: 490px;
+    height: 490px;
+}
+
+#caihuimudiaoyazi_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#caihuijian_box{
+    position: absolute;
+    top: 1165px;
+    left: 40px;
+    width: 236px;
+    height: 234px;
+}
+
+#caihuijian_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#qimayong_box{
+    position: absolute;
+    top: 1165px;
+    left: 295px;
+    width: 236px;
+    height: 234px;
+}
+
+#qimayong_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#hereng_box{
+    position: absolute;
+    top: 1165px;
+    left: 551px;
+    width: 490px;
+    height: 234px;
+}
+
+#hereng_box:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}

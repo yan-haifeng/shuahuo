@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/diaojuan.css">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        .main-div {
+            position: relative;
+            width: 1080px;
+            height: 1632px;
+            background-image: url(../../resources/img/modelling_process_img/diaojuan.jpg);
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-div">
+        <div id="duanmugui_box"></div>
+        <div id="hulu_box"></div>
+        <div id="caihuimudiaoyazi_box"></div>
+        <div id="caihuijian_box"></div>
+        <div id="hezou_box"></div>
+        <div id="qimayong_box"></div>
+        <div id="hereng_box"></div>
+    </div>
+</body>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/show_toy_box.js"></script>
+<script>
+    $(function () {
+        $('#hulu_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/hulu.png';
+            show_box(url);
+        });
+        $('#hezou_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/hezou.png';
+            show_box(url);
+        });
+        $('#qimayong_box').click(function (event) {
+            event.stopPropagation();
+            var url = '../resources/img/006/qimayong.png';
+            show_box(url);
+        });
+    });
+</script>
+
+</html>

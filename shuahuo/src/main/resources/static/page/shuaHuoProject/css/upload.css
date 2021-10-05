@@ -1,0 +1,143 @@
+/* 上传图片样式 */
+.l_func_area .iframe_wapper_img{
+    position: absolute;
+    width: 300px;
+    height: 350px;
+    top: 35px;
+    left: 0px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.176);
+    background-color: #fff;
+    display: none;
+    z-index: 999;
+}
+
+.iframe_wapper_img .title{
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    color: #999999;
+    font-family: PingFangSC-Regular;
+}
+
+.layui-upload{
+    width: 100%;
+    height: 100%;
+}
+
+.upload-img-wapper{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.l_func_area .upload-img-wapper .upload-img-btn{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border: 3px solid #cccccc;
+    background-image: url(../resources/icon/noimg.png);
+    background-color: transparent;
+    background-size: 80px 89.855px;
+    background-repeat: no-repeat;
+    background-position-x: -2px;
+    background-position-y: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    float: left;
+}
+
+.upload-img-wapper .loadimg-wapper{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+}
+
+.upload-img-wapper img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+} 
+
+.upload-img-wapper .loadimg-wapper .del-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+.upload-img-wapper .loadimg-wapper .del-img-btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top: -2px;
+    background-image: url(../resources/icon/ico_layer.png);
+    background-position-x: -24px;
+    background-position-y: -25px;
+}
+
+.upload-img-wapper .loadimg-wapper .del-img-btn:hover{
+    background-position-x: -49px;
+}
+
+/* 上传视频样式 */
+.l_func_area .iframe_wapper_video{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 35px;
+    left: 0px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.176);
+    background-color: #fff;
+    display: none;
+    z-index: 999;
+}
+
+.iframe_wapper_video .upload_video_btn{
+    width: 100px;
+    margin:10px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+    background-color: #fc6766
+}
+
+.iframe_wapper_video .cancel_video_btn{
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-family: PingFangSC-bold;
+    font-size: 14px;
+    color: #999999;
+    cursor: pointer;
+}
+
+.iframe_wapper_video .cancel_video_btn:hover{
+    color: #fc6766;
+}
+
+.upload-video-wapper{
+    width: 300px;
+    height: 159px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.upload-video-wapper video{
+    width: 100%;
+    height: 100%;
+    border: 1px #999999 dashed; 
+}

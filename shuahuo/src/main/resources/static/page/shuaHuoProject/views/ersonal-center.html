@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/structure.css">
+    <link rel="stylesheet" href="../css/structure-min.css">
+    <link rel="stylesheet" href="../css/ft-carousel.css" />
+    <link rel="stylesheet" href="../css/ersonal-center.css">
+    <title>耍货</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="top-nav">
+                <div class="top-nav-center">
+                    <div class="top-nav-center-city">
+                        <ul>
+                            <li><span><img src="../resources/icon/position_1.png"></span></li>
+                            <!-- 后期后台 修改 -->
+                            <li>杭州</li>
+                            <li>
+                                <p>[切换城市]</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-nav-center-sign">
+                        <ul>
+                            <li><a href="login.html" class="login-btn">登录</a></li>
+                            <li><a class="enrol-btn">注册</a></li>
+                            <li class="r-margin-none"><a href="uilt-views/toOrder_details.html">我的订单</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle-nav">
+                <div class="middle-nav-logo"><img src="../resources/icon/logo.gif"></div>
+                <div class="middle-nav-search">
+                    <div class="middle-nav-search-boder">
+                        <div class="middle-nav-search-input">
+                            <span><img src="../resources/icon/search_1.png"></span>
+                            <form action="#">
+                                <input type="text" placeholder="浙江最热门的手工艺品">
+                            </form>
+                        </div>
+                        <div class="middle-nav-search-btn">搜索</div>
+                    </div>
+                    <div class="middle-nav-search-recent">
+                        <ul>
+                            <li><a href="https://www.baidu.com/s?wd=最热手工品在线订购" target="_blank">最热手工品在线订购</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=浙江传统文献" target="_blank">浙江传统文献</a></li>
+                            <li><a href="https://www.baidu.com/s?wd=扇子的制作流程" target="_blank">扇子的制作流程</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <ul>
+                    <li id="h-page"><a href="../index.html" id="p-a">首页<i id="i-a"></i></a></li>
+                    <li id="museum"><a href="museum.html" id="p-b">展览博物馆<i id="i-b"></i></a></li>
+                    <li id="course"><a href="course-process.html" id="p-c">乡土课程<i id="i-c"></i></a>
+                        <ul class="course-drop-nav">
+                            <li><a href="course-process.html">制作流程</a></li>
+                            <li><a href="course-modelling.html">工艺造型</a></li>
+                            <li><a href="course-structure.html">结构原理</a></li>
+                        </ul>
+                    </li>
+                    <li id="community"><a href="community-forum.html" id="p-d">传承社区<i id="i-d"></i></a>
+                    </li>
+                    <li id="custom" class="r-margin-none"><a href="uilt-views/toOrder_details.html" id="p-e">我的定制<i
+                                id="i-e"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <!-- 此处书写主体内容 -->
+        <div class="main-wapper">
+            <div class="link-wapper clearfloat">
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li>></li>
+                    <li><a href="community-forum.html">传承社区</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <!-- 此处书写主体内容  -->
+                <!-- 头像栏 -->
+                <div class="head_box">
+                    <div class="user_head_wapper">
+                        <div class="head_wapper">
+                            <img src="../resources/img/touxaing.jpg" id="user_head_img">
+                        </div>
+                        <p id="user_name">用户名</p>
+                        <div class="change_head_btn" id="change_user_head_btn">更改头像</div>
+                    </div>
+                </div>
+                <!-- 二级导航栏 -->
+                <div class="my_double_nav_wapper">
+                    <ul class="clearfloat">
+                        <li class="nav_myhomepage"><a href="myhomepage.html">我的主页</a></li>
+                        <li class="nav_personalcenter click-li"><a href="ersonal-center.html">个人中心</a></li>
+                        <li class="nav_accountmanagement"><a href="account_management.html">账户管理</a></li>
+                    </ul>
+                </div>
+                <!-- 主要内容 -->
+                <div class="home_mainpage_wapper clearfloat">
+                    <div class="home_mainpage_wapper_l">
+                        <!-- 粉丝、关注、消息 -->
+                        <div class="attention_wapper">
+                            <ul class="clearfloat">
+                                <li>
+                                    <p class="attention_wapper_num">185</p>
+                                    <p class="attention_wapper_title">关注</p>
+                                </li>
+                                <li>
+                                    <p class="attention_wapper_num">48</p>
+                                    <p class="attention_wapper_title">粉丝</p>
+                                </li>
+                                <li class="no-border">
+                                    <p class="attention_wapper_num">75</p>
+                                    <p class="attention_wapper_title">消息</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 我的定制 -->
+                        <div class="my_customization">
+                            <div class="customization_title">
+                                <p>我的定制</p>
+                            </div>
+                            <hr class="hr-f">
+                            <!-- 此处添加我的定制内容 -->
+                            <div class="customization_content" id="orderlist">
+                                <div class="no_customization" id="no_customization">
+                                    空空如也~
+                                    <hr class="hr-f">
+                                </div>
+                            </div>
+                            <div class="customization_see_more">
+                                查看更多
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home_mainpage_wapper_r">
+                        <!-- 基本信息 -->
+                        <div class="user_information">
+                            <form action="" class="layui-form" id="user_information_form">
+                                <input type="text" name="id" class="hidden_input" id="user_id_input">
+                                <div class="basic_information_title">
+                                    <p>基本信息</p>
+                                </div>
+                                <hr class="hr-f">
+                                <!-- 基本信息框 -->
+                                <div class="basic_information">
+                                    <!-- 用户名 -->
+                                    <div class="information_box">
+                                        <p>用户名</p>
+                                        <div class="information_input_box"> <input type="text" name="name"
+                                                id="user_name_input"></div>
+                                    </div>
+                                    <!-- 城市选择 -->
+                                    <div class="information_box">
+                                        <p>所在地</p>
+                                        <div class="layui-form-item location_information_input clearfloat"
+                                            id="area-picker">
+                                            <div class="layui-input-inline location_input_wapper">
+                                                <select name="province" class="province-selector" data-value="浙江省"
+                                                    lay-filter="province-1" id="user_province_select">
+                                                    <option value="">请选择省</option>
+                                                </select>
+                                            </div>
+                                            <div class="layui-input-inline location_input_wapper">
+                                                <select name="city" class="city-selector" data-value="杭州市"
+                                                    lay-filter="city-1" id="user_city_select">
+                                                    <option value="">请选择市</option>
+                                                </select>
+                                            </div>
+                                            <div class="layui-input-inline location_input_wapper r-margin-none">
+                                                <select name="county" class="county-selector" data-value="滨江区"
+                                                    lay-filter="county-1" id="user_county_select">
+                                                    <option value="">请选择区</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 性别选择 -->
+                                    <div class="information_box">
+                                        <p>性别</p>
+                                        <div class="information_input_box">
+                                            <select name="sex" lay-verify="required">
+                                                <option value="0" id=user_sex_option_0>男</option>
+                                                <option value="1" id=user_sex_option_1>女</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- 年龄 -->
+                                    <div class="information_box">
+                                        <p>年龄</p>
+                                        <input type="text" name="age" class="hidden_input" id="user_age_input">
+                                        <div class="check_btn_box">
+                                            <ul class="clearfloat" id="user_age_ul">
+                                                <li id="user_age_00">00后</li>
+                                                <li id="user_age_90">90后</li>
+                                                <li id="user_age_80">80后</li>
+                                                <li id="user_age_70">70后</li>
+                                                <li id="user_age_60">更早</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basic_information_title">
+                                    <p>联系信息</p>
+                                </div>
+                                <hr class="hr-f">
+                                <!-- 联系信息框 -->
+                                <div class="contact_information">
+                                    <!-- 手机号 -->
+                                    <div class="information_box">
+                                        <p>手机号</p>
+                                        <div class="information_input_box disabled"> <input type="text"
+                                                id="user_phonenum_input" disabled></div>
+                                    </div>
+                                    <!-- QQ号 -->
+                                    <div class="information_box">
+                                        <p>QQ号</p>
+                                        <div class="information_input_box"> <input type="text" name="qqnum"
+                                                id="user_qqnum_input"></div>
+                                    </div>
+                                    <!-- 邮箱号 -->
+                                    <div class="information_box">
+                                        <p>邮箱号</p>
+                                        <div class="information_input_box disabled"> <input type="text"
+                                                id="user_e_mail_input" disabled></div>
+                                    </div>
+                                </div>
+                                <div class="basic_information_title">
+                                    <p>职业信息</p>
+                                </div>
+                                <hr class="hr-f">
+                                <!-- 职业信息框 -->
+                                <div class="occupation_information">
+                                    <!-- 职业类型 -->
+                                    <div class="information_box">
+                                        <p>职业类型</p>
+                                        <div class="information_input_box">
+                                            <select name="occupation" lay-verify="required">
+                                                <option value="0" id="user_occuoation_option_0">学生</option>
+                                                <option value="1" id="user_occuoation_option_1">计算机/互联网/通信</option>
+                                                <option value="2" id="user_occuoation_option_2">生产/工艺/制造</option>
+                                                <option value="3" id="user_occuoation_option_3">医疗/护理/制药</option>
+                                                <option value="4" id="user_occuoation_option_4">金融/银行/投资/保险</option>
+                                                <option value="5" id="user_occuoation_option_5">商业/服务业/个体经营</option>
+                                                <option value="6" id="user_occuoation_option_6">文化/广告/传媒</option>
+                                                <option value="7" id="user_occuoation_option_7">娱乐/艺术/表演</option>
+                                                <option value="8" id="user_occuoation_option_8">律师/法务</option>
+                                                <option value="9" id="user_occuoation_option_9">教育/培训</option>
+                                                <option value="10" id="user_occuoation_option_10">公务员/行政/事业单位</option>
+                                                <option value="11" id="user_occuoation_option_11">模特</option>
+                                                <option value="12" id="user_occuoation_option_12">空姐</option>
+                                                <option value="13" id="user_occuoation_option_13">其他</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <!-- 与手工行业相关度 -->
+                                    <div class="information_box">
+                                        <p>与手工行业相关度</p>
+                                        <input type="text" name="correlation_for_handicraft"
+                                            id="user_correlation_for_handicraft_input" class="hidden_input">
+                                        <div class="check_btn_box">
+                                            <ul class="clearfloat" id="user_correlation_for_handicraft_ul">
+                                                <li id="user_correlation_for_handicraft_0">密切</li>
+                                                <li id="user_correlation_for_handicraft_1">涉及</li>
+                                                <li id="user_correlation_for_handicraft_2">较少</li>
+                                                <li id="user_correlation_for_handicraft_3">无关</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="basic_information_title">
+                                    <p>标签信息</p>
+                                </div>
+                                <hr class="hr-f">
+                                <div class="label_information">
+                                    <!-- 个性标签 -->
+                                    <div class="information_box">
+                                        <p>个性标签</p>
+                                        <div class="information_input_box"> <input type="text" name="personality_label"
+                                                id="user_personality_label_input"></div>
+                                    </div>
+                                </div>
+                                <div class="user_information_submit_btn" id="user_information_submit_btn">完成</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="backgroud-black-brown"></div>
+    </div>
+    <div class="footer">
+        <div class="footer_content_wapper clearfloat">
+            <div class="footer_nav_wapper clearfloat">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是工匠</a></li>
+                            <li class="li-column"><a href="#">成为工匠</a></li>
+                            <li class="li-column"><a href="#">创建工作室</a></li>
+                            <li class="li-column"><a href="#">工作室规范</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">我是用户</a></li>
+                            <li class="li-column"><a href="#">注册新用户</a></li>
+                            <li class="li-column"><a href="#">发布订单</a></li>
+                            <li class="li-column"><a href="#">我的定制</a></li>
+                            <li class="li-column"><a href="#">参与讨论</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">文化保护</a></li>
+                            <li class="li-column"><a href="#">文化产权保护</a></li>
+                            <li class="li-column"><a href="#">文创产品</a></li>
+                            <li class="li-column"><a href="#">活动发布</a></li>
+                            <li class="li-column"><a href="#">法律顾问</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">在线课堂</a></li>
+                            <li class="li-column"><a href="#">玩具制作</a></li>
+                            <li class="li-column"><a href="#">玩具文化</a></li>
+                            <li class="li-column"><a href="#">名人工匠</a></li>
+                            <li class="li-column"><a href="#">热点推荐</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">虚拟展厅</a></li>
+                            <li class="li-column"><a href="#">全景模型</a></li>
+                            <li class="li-column"><a href="#">小游戏</a></li>
+                        </ul>
+                    </li>
+                    <li class="r-margin-none">
+                        <ul>
+                            <li class="li-column"><a href="#" class="footer_nav_title">联系我们</a></li>
+                            <li class="li-column"><a href="#">400-123-123</a></li>
+                            <li class="li-column"><a href="#">wanju@sina.com</a></li>
+                            <li class="li-column"><a href="#">客服留言</a></li>
+                            <li class="li-column"><a href="#">团队介绍</a></li>
+                            <li class="li-column"><a href="#">关于网站</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr class="hr-e">
+            <p>© 版权所有 耍货网页制作团队 技术支持 耍货网页制作团队 </p>
+            <div class="numbers_wapper">
+                <p>网站总访问人数：</p>
+                <p class="visitors_number">9999</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="enrol-box mask">
+        <div class="enrol-box-wapper">
+            <div class="exitbtn clearfloat"><span><img src="../resources/icon/exit.png"></span></div>
+            <div class="enrol-title clearfloat">
+                <ul id="enrol-ul">
+                    <li class="click-li">
+                        <p id="enrol_for_phone">手机号注册</p>
+                    </li>
+                    <li>
+                        <p id="enrol_for_e-mail">邮箱注册</p>
+                    </li>
+                    <li class="r-margin-none">
+                        <p id="enrol_for_account">账号注册</p>
+                    </li>
+                </ul>
+            </div>
+            <iframe src="../views/iframe-views/enrol-phone-form.html" frameborder="0" scrolling="no"
+                id="enrol_iframe"></iframe>
+        </div>
+    </div>
+
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/tologin.js"></script>
+<script src="../js/enrol.js"></script>
+<script src="../layui/layui.js"></script>
+<script src="../js/structure.js"></script>
+<script src="../js/modification-user-data.js"></script>
+<script>
+    $(function () {
+        //让背景与body一样高
+        $(".backgroud-black-brown").css("height", ($("body").css("height").substring(0, $("body").css("height").length - 2) - 457) + "px");
+    });
+</script>
+
+<script>
+    //填充城市
+    //配置插件目录
+    layui.config({
+        base: '../js/'
+        , version: '1.0'
+    });
+    //一般直接写在一个js文件中
+    layui.use(['layer', 'form', 'layarea'], function () {
+        var layer = layui.layer
+            , form = layui.form
+            , layarea = layui.layarea;
+
+        layarea.render({
+            elem: '#area-picker',
+            change: function (res) {
+                //选择结果
+                //填充进input
+            }
+        });
+    });
+</script>
+
+
+</html>

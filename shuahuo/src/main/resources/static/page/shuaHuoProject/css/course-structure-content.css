@@ -1,0 +1,24 @@
+/* 
+四种字体：
+PingFangSC-Regular 标准
+PingFangSC-Light 细
+PingFangSC-Medium 中黑
+PingFangSC-bold 中粗
+*/
+body{
+    min-width: 0px;
+}
+
+.video-wapper{
+    width: 700px;
+    margin-top: 10px;
+    margin: auto;
+}
+
+.video-text{
+    display: block;
+    margin-top: 50px;
+    font-family: PingFangSC-Regular;
+    font-size: 18px;
+    color: #999999;
+}
